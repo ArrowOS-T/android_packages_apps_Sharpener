@@ -124,4 +124,8 @@
     <string name="projection_privacy_indicator_title">Media projection privacy indicator</string>
     <string name="projection_privacy_indicator_summary">Show indicator when device screen is projected</string>
 
+    <!-- Less boring heads up -->
+    <string name="less_boring_heads_up_title">Saner heads up</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for calls, messages, alarms, reminders and priority conversations</string>
+
 </resources>
