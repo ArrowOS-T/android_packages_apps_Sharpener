@@ -43,6 +43,7 @@
     <string name="reset">Reset</string>
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
+    <string name="none_string">None</string>
 
     <!-- Power menu on secure lockscreen -->
     <string name="lockscreen_enable_power_menu_title">Power menu on lockscreen</string>
@@ -55,5 +56,13 @@
     <!-- 4G icon -->
     <string name="show_fourg_icon_title">Show 4G icon</string>
     <string name="show_fourg_icon_summary">Display 4G icon in signal icon instead LTE</string>
+
+    <!-- Media art -->
+    <string name="lockscreen_media_art_options_title">Media cover art</string>
+    <string name="media_art_title">Media cover art</string>
+    <string name="media_art_summary">Display media cover art when available</string>
+
+    <!-- Lock screen cover art -->
+    <string name="lockscreen_media_blur_title">Media art blur level</string>
 
 </resources>
