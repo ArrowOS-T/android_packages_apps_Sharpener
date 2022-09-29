@@ -244,4 +244,10 @@
     <string name="combined_status_bar_signal_icons_summary">Show single combined icon for WiFi and mobile signal.</string>
     <string name="combined_status_bar_signal_icons_title">Combined signal icons</string>
 
+    <!-- QS tile shape -->
+    <string name="qs_tile_shape">QS tile shape</string>
+    <string name="qs_tile_round">Round</string>
+    <string name="qs_tile_rect">Rounded Rectangle</string>
+    <string name="qs_tile_mix">Round for active tiles and Rounded Rectangle for inactive tiles</string>
+
 </resources>
