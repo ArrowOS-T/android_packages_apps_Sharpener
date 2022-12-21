@@ -18,4 +18,10 @@
     android:title="@string/sharpener_misc_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.arrow.support.preferences.GlobalSettingSwitchPreference
+          android:key="pie_animation_style"
+          android:title="@string/pie_animation_style_title"
+          android:summary="@string/pie_animation_style_summary"
+          android:defaultValue="false" />
+
 </PreferenceScreen>

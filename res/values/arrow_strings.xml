@@ -94,4 +94,8 @@
     <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
     <string name="lockscreen_battery_info_summary">Display negociated charger max current and voltage and battery temperature on lockscreen while charging</string>
 
+    <!-- Android P animation style -->
+    <string name="pie_animation_style_title">Android P animation</string>
+    <string name="pie_animation_style_summary">Enable Android Pie \"Default\" animations</string>
+
 </resources>
