@@ -26,10 +26,16 @@
      </Preference>
 
      <Preference
+        android:key="battery_settings"
+        android:title="@string/status_bar_battery_style_title"
+        android:summary="@string/status_bar_battery_style_summary"
+        android:fragment="com.arrow.support.fragments.statusbar.BatterySettings"/>
+
+     <Preference
         android:key="network_traffic_settings"
         android:title="@string/network_traffic_title"
         android:summary="@string/network_traffic_summary"
-        android:fragment="com.arrow.support.fragments.statusbar.NetworkTrafficSettings"/>
+        android:fragment="com.arrow.support.fragments.statusbar.NetworkTrafficSettings"/>   
 
     <com.arrow.support.preferences.SystemSettingSeekBarPreference
             android:key="max_visible_notification_icons"
