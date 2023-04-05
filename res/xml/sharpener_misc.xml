@@ -22,7 +22,13 @@
         android:key="spoofing"
         android:title="@string/sharpener_spoofing_title"
         android:summary="@string/sharpener_spoofing_summary"
-        android:fragment="com.arrow.support.fragments.miscellaneous.SpoofSettings" />    
+        android:fragment="com.arrow.support.fragments.miscellaneous.SpoofSettings" />
+
+    <Preference
+        android:key="omnijaws_settings"
+        android:title="@string/qs_weather_settings_title"
+        android:summary="@string/qs_weather_settings_summary"
+        android:fragment="com.arrow.support.fragments.miscellaneous.OmniJawsSettings" />        
 
     <com.arrow.support.preferences.SecureSettingSwitchPreference
         android:key="window_ignore_secure"
