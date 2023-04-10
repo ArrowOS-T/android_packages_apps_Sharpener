@@ -255,4 +255,11 @@
     <string name="qs_style_default">Large pill</string>
     <string name="qs_style_round">Small circle</string>
 
+    <!-- QS columns customization -->
+    <string name="qs_tiles_category_title">Tile Settings</string>
+    <string name="qs_columns">QS columns in portrait</string>
+    <string name="qs_columns_landscape">QS columns in landscape</string>
+    <string name="qqs_columns">QQS columns in portrait</string>
+    <string name="qqs_columns_landscape">QQS columns in landscape</string>
+
 </resources>
