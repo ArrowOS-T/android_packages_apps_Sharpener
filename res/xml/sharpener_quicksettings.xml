@@ -18,20 +18,6 @@
     android:title="@string/sharpener_quicksettings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.arrow.support.preferences.SecureSettingListPreference
-        android:key="qs_style_round"
-        android:title="@string/qs_style_title"
-        android:entries="@array/qs_style_entries"
-        android:entryValues="@array/qs_style_values"
-        android:defaultValue="1" />
-
-    <com.arrow.support.preferences.SecureSettingListPreference
-        android:key="qs_tile_shape"
-        android:title="@string/qs_tile_shape"
-        android:entries="@array/qs_tile_shape_entries"
-        android:entryValues="@array/qs_tile_shape_values"
-        android:defaultValue="2" />
-
     <com.arrow.support.preferences.SecureSettingSwitchPreference
         android:key="qs_show_data_usage"
         android:title="@string/qs_show_data_usage_title"
@@ -67,6 +53,54 @@
             android:title="@string/qs_show_auto_brightness_title"
             android:summary="@string/qs_show_auto_brightness_summary"
             android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="quick_settings_tile_category"
+        android:title="@string/qs_tiles_category_title">
+
+        <com.arrow.support.preferences.SecureSettingListPreference
+            android:key="qs_style_round"
+            android:title="@string/qs_style_title"
+            android:entries="@array/qs_style_entries"
+            android:entryValues="@array/qs_style_values"
+            android:defaultValue="1" />
+
+        <com.arrow.support.preferences.SecureSettingListPreference
+            android:key="qs_tile_shape"
+            android:title="@string/qs_tile_shape"
+            android:entries="@array/qs_tile_shape_entries"
+            android:entryValues="@array/qs_tile_shape_values"
+            android:defaultValue="2" />
+
+        <com.arrow.support.preferences.SecureSettingSeekBarPreference
+            android:key="qqs_num_columns"
+            android:title="@string/qqs_columns"
+            settings:min="2"
+            android:max="5"
+            android:defaultValue="5" />
+
+        <com.arrow.support.preferences.SecureSettingSeekBarPreference
+            android:key="qqs_num_columns_landscape"
+            android:title="@string/qqs_columns_landscape"
+            settings:min="2"
+            android:max="6"
+            android:defaultValue="6" />
+
+        <com.arrow.support.preferences.SecureSettingSeekBarPreference
+            android:key="qs_num_columns"
+            android:title="@string/qs_columns"
+            settings:min="2"
+            android:max="4"
+            android:defaultValue="4" />
+
+        <com.arrow.support.preferences.SecureSettingSeekBarPreference
+            android:key="qs_num_columns_landscape"
+            android:title="@string/qs_columns_landscape"
+            settings:min="2"
+            android:max="6"
+            android:defaultValue="6" />    
 
     </PreferenceCategory>
 

@@ -57,6 +57,9 @@ import java.util.Collections;
 public class QuickSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String KEY_QS_WIDGETS_ENABLED  = "qs_widgets_enabled";
+    private static final String[] qsCustPreferences = { "qs_tile_shape",
+            "qqs_num_columns", "qqs_num_columns_landscape",
+            "qs_num_columns", "qs_num_columns_landscape" };
 
     private Preference mQsWidgetsPref;
 
@@ -67,6 +70,18 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
         PreferenceScreen prefScreen = getPreferenceScreen();
         mQsWidgetsPref = findPreference(KEY_QS_WIDGETS_ENABLED);
         mQsWidgetsPref.setOnPreferenceChangeListener(this);
+
+        boolean qsStyleRound = Settings.Secure.getIntForUser(getContext().getContentResolver(),
+                Settings.Secure.QS_STYLE_ROUND, 1, UserHandle.USER_CURRENT) == 1;
+                
+        if (!qsStyleRound) {
+            for (String key : qsCustPreferences) {
+                Preference preference = prefScreen.findPreference(key);
+                if (preference != null) {
+                    preference.setEnabled(false);
+                }
+            }
+        }
     }
 
     @Override
