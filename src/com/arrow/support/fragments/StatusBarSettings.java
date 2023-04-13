@@ -52,15 +52,26 @@ import java.util.Collections;
 
 public class StatusBarSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
+    private Preference mCombinedSignalIcons;
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.sharpener_statusbar);
         PreferenceScreen prefSet = getPreferenceScreen();
+
+        mCombinedSignalIcons = findPreference("persist.sys.flags.combined_signal_icons");
+        mCombinedSignalIcons.setOnPreferenceChangeListener(this);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
+        if (preference == mCombinedSignalIcons) {
+            boolean value = (Boolean) objValue;
+            Settings.Secure.putIntForUser(getContentResolver(),
+                Settings.Secure.ENABLE_COMBINED_SIGNAL_ICONS, value ? 0 : 1, UserHandle.USER_CURRENT);
+            return true;
+        }
         return false;
     }
 
