@@ -62,7 +62,13 @@
           android:key="hide_qs_call_strength"
           android:title="@string/show_qs_call_strength_icon_title"
           android:summary="@string/show_qs_call_strength_icon_summary"
-          android:defaultValue="true" />       
+          android:defaultValue="true" />
+
+     <com.arrow.support.preferences.SystemPropertySwitchPreference
+          android:key="persist.sys.flags.combined_signal_icons"
+          android:title="@string/combined_status_bar_signal_icons_title"
+          android:summary="@string/combined_status_bar_signal_icons_summary"
+          android:defaultValue="false" />            
 
      <com.arrow.support.preferences.SecureSettingSwitchPreference
           android:key="enable_location_privacy_indicator"
