@@ -19,6 +19,12 @@
     android:title="@string/sharpener_notifications_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <Preference
+        android:key="island_notification"
+        android:title="@string/island_notification_title"
+        android:summary="@string/island_notification_summary"
+        android:fragment="com.arrow.support.fragments.notifications.IslandSettings" />
+
     <com.arrow.support.preferences.SystemSettingSwitchPreference
         android:key="notification_sound_vib_screen_on"
         android:title="@string/notification_sound_vib_screen_on_title"

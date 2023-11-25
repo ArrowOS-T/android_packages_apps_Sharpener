@@ -23,6 +23,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.os.UserHandle;
+import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import androidx.preference.ListPreference;
@@ -50,6 +51,8 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Collections;
 
+import com.arrow.support.fragments.notifications.IslandSettings;
+
 public class NotificationSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     @Override
@@ -62,6 +65,11 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         return false;
+    }
+
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+        IslandSettings.reset(mContext);
     }
 
     @Override
