@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2024 ArrowOS-T
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Extension Title -->
+    <string name="sharpener_title">Sharpener</string>
+
+    <!-- Categories -->
+    <string name="sharpener_about_title">About Us</string>
+    <string name="sharpener_about_summary">All about this OS can be found here..</string>
+    <string name="sharpener_lockscreen_title">Lock screen</string>
+    <string name="sharpener_lockscreen_summary">Turn on your phone and set your lockscreen area</string>
+    <string name="sharpener_themes_title">Themes</string>
+    <string name="sharpener_themes_summary">Welcome to the customization room.</string>
+    <string name="sharpener_misc_title">Misc</string>
+    <string name="sharpener_misc_summary">Various features that enchance the function of your phone</string>
+    <string name="sharpener_quicksettings_title">Quick settings</string>
+    <string name="sharpener_quicksettings_summary">Make your best quick settings area</string>
+    <string name="sharpener_statusbar_title">Status bar</string>
+    <string name="sharpener_statusbar_summary">Set or customize the statusbar area</string>
+    <string name="sharpener_notifications_title">Notifications</string>
+    <string name="sharpener_notifications_summary">There is a feature that manage notifications</string>
+    <string name="sharpener_gestures_title">Gestures</string>
+    <string name="sharpener_gestures_summary">Everything about gestures is arranged here!</string>
+    <string name="sharpener_buttons_title">Buttons</string>
+    <string name="sharpener_buttons_summary">Bring up your button settings here..</string>
+
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+
+</resources>
