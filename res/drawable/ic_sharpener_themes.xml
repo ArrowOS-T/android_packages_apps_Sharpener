@@ -1,0 +1,42 @@
+<!--
+     Copyright (C) 2024 ArrowOS-T
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+         http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="24dp"
+        android:height="24dp"
+        android:viewportWidth="24.0"
+        android:viewportHeight="24.0">
+    <path
+        android:fillColor="#00ffffff"
+        android:pathData="M9.57,17.85L18.90,6.95C20.75,4.77,17.84,2.31,16.00,4.49L6.66,15.39Q9.34,15.17,9.57,17.85z"
+        android:strokeColor="#ff000000"
+        android:strokeWidth="0.8057615"
+        android:strokeLineCap="square"
+        android:strokeLineJoin="miter"
+        android:fillType="nonZero" />
+    <path
+        android:fillColor="#00ffffff"
+        android:pathData="M4.51,20.36C4.58,19.62,4.65,18.88,4.79,18.29C4.94,17.70,5.17,17.26,5.77,16.94C6.38,16.62,7.36,16.42,7.90,16.99C8.44,17.55,8.54,18.87,7.90,19.56C7.26,20.25,5.88,20.30,4.51,20.36z"
+        android:strokeColor="#ff000000"
+        android:strokeWidth="0.8057615"
+        android:strokeLineCap="square"
+        android:strokeLineJoin="miter"
+        android:fillType="nonZero" />
+    <path
+        android:fillColor="#00ffffff"
+        android:pathData="M17.00,5.01C17.86,4.64,18.50,5.19,18.28,6.10"
+        android:strokeColor="#ff000000"
+        android:strokeWidth="0.8057615"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="miter"
+        android:fillType="nonZero" />
+</vector>
