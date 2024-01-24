@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 ArrowOS-T
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#00ffffff"
+        android:pathData="M8.25,2.00L15.75,2.00A1.25 1.25 0 0 1 17.00,3.25L17.00,20.75A1.25 1.25 0 0 1 15.75,22.00L8.25,22.00A1.25 1.25 0 0 1 7.00,20.75L7.00,3.25A1.25 1.25 0 0 1 8.25,2.00z"
+        android:strokeColor="#ff000000"
+        android:strokeWidth="0.96"
+        android:strokeLineCap="square"
+        android:strokeLineJoin="miter"
+        android:fillType="nonZero" />
+    <path
+        android:fillColor="#00ffffff"
+        android:pathData="M8.52,3.68L15.48,3.68"
+        android:strokeColor="#ff000000"
+        android:strokeWidth="0.96"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="miter"
+        android:fillType="nonZero" />
+</vector>
