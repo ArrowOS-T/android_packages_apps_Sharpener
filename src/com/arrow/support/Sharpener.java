@@ -21,12 +21,24 @@ import com.android.internal.logging.nano.MetricsProto;
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
+import android.app.settings.SettingsEnums;
+import android.content.Context;
+import android.content.Intent;
+import android.content.pm.UserInfo;
 import android.os.Bundle;
+import android.os.UserManager;
+import android.view.View;
 import android.view.Surface;
 import android.preference.Preference;
 import com.android.settings.R;
 
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.widget.EntityHeaderController;
+import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settingslib.core.lifecycle.Lifecycle;
+import com.android.settingslib.widget.LayoutPreference;
 
 public class Sharpener extends SettingsPreferenceFragment {
 
@@ -40,6 +52,18 @@ public class Sharpener extends SettingsPreferenceFragment {
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.SHARPENER;
+    }
+
+    @Override
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
+        return buildPreferenceControllers(context, this /* fragment */, getSettingsLifecycle());
+    }
+    
+    private static List<AbstractPreferenceController> buildPreferenceControllers(
+            Context context, Sharpener fragment, Lifecycle lifecycle) {
+        final List<AbstractPreferenceController> controllers = new ArrayList<>();
+        controllers.add(new sharpenerSettingsController(context));
+        return controllers;
     }
 
 }

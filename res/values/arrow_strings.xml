@@ -23,6 +23,8 @@
     <string name="sharpener_about_summary">All about this OS can be found here..</string>
     <string name="sharpener_lockscreen_title">Lock screen</string>
     <string name="sharpener_lockscreen_summary">Turn on your phone and set your lockscreen area</string>
+    <string name="sharpener_themes_title">Themes</string>
+    <string name="sharpener_themes_summary">Welcome to the customization room...the festive and magnificent is here</string>
     <string name="sharpener_misc_title">Miscellaneous</string>
     <string name="sharpener_misc_summary">Various features that enchance the function of your phone</string>
     <string name="sharpener_quicksettings_title">Quick settings</string>
