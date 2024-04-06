@@ -18,6 +18,13 @@
     android:title="@string/sharpener_misc_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!-- GMS spoof -->
+    <com.arrow.support.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pixelprops.gms"
+        android:title="@string/gms_spoof_title"
+        android:summary="@string/gms_spoof_summary"
+        android:defaultValue="false" />
+
     <!-- Unlock FPS for specific games -->
     <SwitchPreference
         android:key="use_games_spoof"
