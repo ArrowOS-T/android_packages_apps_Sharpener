@@ -168,4 +168,8 @@
     <string name="qs_widgets_enabled_title">QuickSettings Widgets</string>
     <string name="qs_widgets_enabled_summary">Show quicksettings widgets for quick access</string>
 
+    <!-- GMS Spoof -->
+    <string name="gms_spoof_title">Enable GMS spoof</string>
+    <string name="gms_spoof_summary">Spoof your device to pass Google Play Attestation (Breaks Pixel Features)</string>
+
 </resources>
