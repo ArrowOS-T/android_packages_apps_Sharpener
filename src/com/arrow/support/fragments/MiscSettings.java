@@ -52,6 +52,8 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Collections;
 
+import com.android.internal.util.arrow.SystemRestartUtils;
+
 public class MiscSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
     
     private static final String KEY_GAMES_SPOOF = "use_games_spoof";
@@ -61,10 +63,12 @@ public class MiscSettings extends SettingsPreferenceFragment implements OnPrefer
     private static final String SYS_GAMES_SPOOF = "persist.sys.pixelprops.games";
     private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
     private static final String SYS_NETFLIX_SPOOF = "persist.sys.spoof_netflix";
+    private static final String SYS_GMS_SPOOF = "persist.sys.pixelprops.gms";
 
     private SwitchPreference mGamesSpoof;
     private SwitchPreference mPhotosSpoof;
     private SwitchPreference mNetFlixSpoof;
+    private Preference mGmsSpoof;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -85,6 +89,9 @@ public class MiscSettings extends SettingsPreferenceFragment implements OnPrefer
         mNetFlixSpoof = (SwitchPreference) findPreference(KEY_NETFLIX_SPOOF);
         mNetFlixSpoof.setChecked(SystemProperties.getBoolean(SYS_NETFLIX_SPOOF, false));
         mNetFlixSpoof.setOnPreferenceChangeListener(this);
+
+        mGmsSpoof = (Preference) findPreference(SYS_GMS_SPOOF);
+        mGmsSpoof.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -120,7 +127,10 @@ public class MiscSettings extends SettingsPreferenceFragment implements OnPrefer
             SystemProperties.set(SYS_NETFLIX_SPOOF, value ? "true" : "false");
             SystemPropPoker.getInstance().poke();
             return true;
+        } else if (preference == mGmsSpoof) {
+            SystemRestartUtils.showSystemRestartDialog(getContext());
+            return true;
         }
-        return true;
+        return false;
     }
 }
