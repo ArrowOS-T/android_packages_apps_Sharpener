@@ -44,4 +44,8 @@
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
 
+    <!-- Power menu on secure lockscreen -->
+    <string name="lockscreen_enable_power_menu_title">Power menu on lockscreen</string>
+    <string name="lockscreen_enable_power_menu_summary">Allow accessing power menu on secure lockscreen</string>
+
 </resources>
