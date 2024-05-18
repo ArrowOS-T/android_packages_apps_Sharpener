@@ -52,4 +52,8 @@
     <string name="disable_qs_title">Hide QS in secure lockscreen</string>
     <string name="disable_qs_summary">Hides QS if device is locked. Does not disable notification shade</string>
 
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">Show 4G icon</string>
+    <string name="show_fourg_icon_summary">Display 4G icon in signal icon instead LTE</string>
+
 </resources>
