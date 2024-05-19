@@ -79,4 +79,8 @@
     <string name="qs_show_auto_brightness_title">Auto brightness icon</string>
     <string name="qs_show_auto_brightness_summary">Show toggle for adaptive brightness near the slider</string>
 
+    <!-- Max visible notification icons -->
+    <string name="max_visible_notification_icons_title">Notification icon count</string>
+    <string name="max_visible_notification_icons_summary">Toggle to adjust maximum notification icon in statusbar</string>
+
 </resources>
