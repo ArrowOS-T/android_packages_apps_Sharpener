@@ -56,21 +56,38 @@ public class MiscSettings extends SettingsPreferenceFragment implements OnPrefer
     
     private static final String SYS_GMS_SPOOF = "persist.sys.pixelprops.gms";
     private static final String SYS_PROP_OPTIONS = "persist.sys.pixelprops.all";
+    private static final String SYS_NETFLIX_SPOOF = "persist.sys.pixelprops.netflix";
+    private static final String SYS_GPHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
+    
+    private boolean isPixelDevice;
 
     private Preference mGmsSpoof;
+    private Preference mGphotosSpoof;
+    private Preference mNetflixSpoof;
     private Preference mPropOptions;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.sharpener_misc);
-        PreferenceScreen prefScreen = getPreferenceScreen();
+        final PreferenceScreen prefScreen = getPreferenceScreen();
 
         ContentResolver resolver = getActivity().getContentResolver();
 
+        mNetflixSpoof = (Preference) findPreference(SYS_NETFLIX_SPOOF);
+        mGphotosSpoof = (Preference) findPreference(SYS_GPHOTOS_SPOOF);
         mGmsSpoof = (Preference) findPreference(SYS_GMS_SPOOF);
-        mGmsSpoof.setOnPreferenceChangeListener(this);
         mPropOptions = (Preference) findPreference(SYS_PROP_OPTIONS);
+        isPixelDevice = SystemProperties.get("ro.soc.manufacturer").equals("Google");
+        if (!isPixelDevice) {
+            mPropOptions.setEnabled(false);
+            mPropOptions.setSummary(R.string.spoof_option_disabled);
+        } else {
+            mGmsSpoof.setDependency(SYS_PROP_OPTIONS);
+            mGphotosSpoof.setDependency(SYS_PROP_OPTIONS);
+            mNetflixSpoof.setDependency(SYS_PROP_OPTIONS);
+        }
+        mGmsSpoof.setOnPreferenceChangeListener(this);
         mPropOptions.setOnPreferenceChangeListener(this);
     }
 
