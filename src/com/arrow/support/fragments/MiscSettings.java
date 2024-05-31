@@ -55,8 +55,10 @@ import com.android.internal.util.arrow.SystemRestartUtils;
 public class MiscSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
     
     private static final String SYS_GMS_SPOOF = "persist.sys.pixelprops.gms";
+    private static final String SYS_PROP_OPTIONS = "persist.sys.pixelprops.all";
 
     private Preference mGmsSpoof;
+    private Preference mPropOptions;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -68,6 +70,8 @@ public class MiscSettings extends SettingsPreferenceFragment implements OnPrefer
 
         mGmsSpoof = (Preference) findPreference(SYS_GMS_SPOOF);
         mGmsSpoof.setOnPreferenceChangeListener(this);
+        mPropOptions = (Preference) findPreference(SYS_PROP_OPTIONS);
+        mPropOptions.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -88,7 +92,7 @@ public class MiscSettings extends SettingsPreferenceFragment implements OnPrefer
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         final String key = preference.getKey();
-        if (preference == mGmsSpoof) {
+        if (preference == mGmsSpoof || preference == mPropOptions) {
             SystemRestartUtils.showSystemRestartDialog(getContext());
             return true;
         }

@@ -18,32 +18,42 @@
     android:title="@string/sharpener_misc_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.arrow.support.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pixelprops.all"
+        android:title="@string/all_props_title"
+        android:summary="@string/all_props_summary"
+        android:defaultValue="true" />
+
     <!-- GMS spoof -->
     <com.arrow.support.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.pixelprops.gms"
         android:title="@string/gms_spoof_title"
         android:summary="@string/gms_spoof_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        android:dependency="persist.sys.pixelprops.all" />
 
     <!-- Unlock FPS for specific games -->
     <com.arrow.support.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.pixelprops.games"
         android:title="@string/use_games_spoof_title"
-        android:summary="@string/use_games_spoof_summary"/>
+        android:summary="@string/use_games_spoof_summary"
+        android:dependency="persist.sys.pixelprops.all" />
 
     <!-- Unlimited google photos storage -->
     <com.arrow.support.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.pixelprops.gphotos"
         android:title="@string/use_photos_spoof_title"
         android:summary="@string/use_photos_spoof_summary"
-        android:defaultValue="true" />
+        android:defaultValue="true"
+        android:dependency="persist.sys.pixelprops.all" />
 
     <!-- Netflix -->
     <com.arrow.support.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.pixelprops.netflix"
         android:title="@string/netflix_spoof_title"
         android:summary="@string/netflix_spoof_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        android:dependency="persist.sys.pixelprops.all" />
 
     <com.arrow.support.preferences.SecureSettingSwitchPreference
         android:key="window_ignore_secure"
