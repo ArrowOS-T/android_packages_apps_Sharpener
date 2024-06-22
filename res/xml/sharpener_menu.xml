@@ -18,14 +18,11 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/sharpener_title" >
 
-        <!-- About Us -->
-        <Preference
-            android:key="aboutus_category"
-            android:title="@string/sharpener_about_title"
-            android:summary="@string/sharpener_about_summary"
-            android:fragment="com.arrow.support.fragments.AboutSettings"
-            settings:layout="@layout/card_interface_single"
-            android:icon="@drawable/ic_sharpener_about"/>
+    <!-- Top (Quick Settings, Status Bar and Themes)-->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="sharpener_menu_top"
+        android:layout="@layout/sharpener_menu_layout_top"
+        android:selectable="false"/>
 
         <!-- Themes -->
         <Preference
@@ -35,24 +32,6 @@
             android:fragment="com.arrow.support.fragments.ThemesSettings"
             settings:layout="@layout/card_interface_top"
             android:icon="@drawable/ic_sharpener_themes"/>    
-
-        <!-- Status Bar -->
-        <Preference
-            android:key="statusbar_category"
-            android:title="@string/sharpener_statusbar_title"
-            android:summary="@string/sharpener_statusbar_summary"
-            android:fragment="com.arrow.support.fragments.StatusBarSettings"
-            settings:layout="@layout/card_interface_middle"
-            android:icon="@drawable/ic_sharpener_statusbar"/>
-
-        <!-- Quick Settings -->
-        <Preference
-            android:key="quicksettings_category"
-            android:title="@string/sharpener_quicksettings_title"
-            android:summary="@string/sharpener_quicksettings_summary"
-            android:fragment="com.arrow.support.fragments.QuickSettings"
-            settings:layout="@layout/card_interface_middle"
-            android:icon="@drawable/ic_sharpener_quicksettings"/>
 
         <!-- Notifications -->
         <Preference
