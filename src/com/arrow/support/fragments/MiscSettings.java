@@ -95,6 +95,7 @@ public class MiscSettings extends SettingsPreferenceFragment implements OnPrefer
         mGmsSpoof.setOnPreferenceChangeListener(this);
         mPropOptions.setOnPreferenceChangeListener(this);
         mGoogleSpoof.setOnPreferenceChangeListener(this);
+        mGphotosSpoof.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -115,7 +116,7 @@ public class MiscSettings extends SettingsPreferenceFragment implements OnPrefer
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         final String key = preference.getKey();
-        if (preference == mGmsSpoof || preference == mPropOptions || preference == mGoogleSpoof) {
+        if (preference == mGmsSpoof || preference == mPropOptions || preference == mGoogleSpoof || preference == mGphotosSpoof) {
             SystemRestartUtils.showSystemRestartDialog(getContext());
             return true;
         }
