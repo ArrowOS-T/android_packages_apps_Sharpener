@@ -24,59 +24,10 @@
         android:layout="@layout/sharpener_menu_layout_top"
         android:selectable="false"/>
 
-        <!-- Themes -->
-        <Preference
-            android:key="themes_category"
-            android:title="@string/sharpener_themes_title"
-            android:summary="@string/sharpener_themes_summary"
-            android:fragment="com.arrow.support.fragments.ThemesSettings"
-            settings:layout="@layout/card_interface_top"
-            android:icon="@drawable/ic_sharpener_themes"/>    
-
-        <!-- Notifications -->
-        <Preference
-            android:key="notifications_category"
-            android:title="@string/sharpener_notifications_title"
-            android:summary="@string/sharpener_notifications_summary"
-            android:fragment="com.arrow.support.fragments.NotificationSettings"
-            settings:layout="@layout/card_interface_middle"
-            android:icon="@drawable/ic_sharpener_notifications"/>
-
-        <!-- Lockscreen -->
-        <Preference
-            android:key="lockscreen_category"
-            android:title="@string/sharpener_lockscreen_title"
-            android:summary="@string/sharpener_lockscreen_summary"
-            android:fragment="com.arrow.support.fragments.LockScreenSettings"
-            settings:layout="@layout/card_interface_middle"
-            android:icon="@drawable/ic_sharpener_lockscreen"/>        
-
-        <!-- Gestures -->
-        <Preference
-            android:key="gestures_category"
-            android:title="@string/sharpener_gestures_title"
-            android:summary="@string/sharpener_gestures_summary" 
-            android:fragment="com.android.settings.gestures.GestureSettings"
-            settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"
-            settings:layout="@layout/card_interface_middle"
-            android:icon="@drawable/ic_sharpener_gestures"/>
-
-        <!-- Buttons -->
-        <Preference
-            android:key="buttons_category"
-            android:title="@string/sharpener_buttons_title"
-            android:summary="@string/sharpener_buttons_summary" 
-            android:fragment="com.arrow.support.fragments.ButtonsSettings"
-            settings:layout="@layout/card_interface_middle"
-            android:icon="@drawable/ic_sharpener_buttons"/>
-
-        <!-- Misc -->
-        <Preference
-            android:key="misc_category"
-            android:title="@string/sharpener_misc_title"
-            android:summary="@string/sharpener_misc_summary" 
-            android:fragment="com.arrow.support.fragments.MiscSettings"
-            settings:layout="@layout/card_interface_bottom"
-            android:icon="@drawable/ic_sharpener_misc"/>            
+    <!-- Bottom (6 Other Menus)-->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="sharpener_menu_bottom"
+        android:layout="@layout/sharpener_menu_layout_bottom"
+        android:selectable="false"/>  
 
 </PreferenceScreen>
