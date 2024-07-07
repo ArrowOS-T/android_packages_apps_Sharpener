@@ -172,7 +172,7 @@
 
     <!-- GMS Spoof -->
     <string name="gms_spoof_title">Enable GMS spoof</string>
-    <string name="gms_spoof_summary">Spoof your device to pass Google Play Attestation (Breaks Pixel Features)</string>
+    <string name="gms_spoof_summary">Spoof your device to pass Google Play Attestation</string>
 
     <!-- Enable all props -->
     <string name="all_props_title">Enable spoof options</string>
