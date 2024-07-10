@@ -18,6 +18,27 @@
     android:title="@string/sharpener_misc_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!-- Unlock FPS for specific games -->
+    <SwitchPreference
+        android:key="use_games_spoof"
+        android:title="@string/use_games_spoof_title"
+        android:summary="@string/use_games_spoof_summary"
+        android:defaultValue="false"/>
+
+    <!-- Unlimited google photos storage -->
+    <SwitchPreference
+        android:key="use_photos_spoof"
+        android:title="@string/use_photos_spoof_title"
+        android:summary="@string/use_photos_spoof_summary"
+        android:defaultValue="true" />
+
+    <!-- Netflix -->
+    <SwitchPreference
+        android:key="use_netflix_spoof"
+        android:title="@string/netflix_spoof_title"
+        android:summary="@string/netflix_spoof_summary"
+        android:defaultValue="false" />
+
     <com.arrow.support.preferences.GlobalSettingSwitchPreference
           android:key="pie_animation_style"
           android:title="@string/pie_animation_style_title"
