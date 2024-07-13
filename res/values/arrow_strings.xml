@@ -110,4 +110,10 @@
     <string name="netflix_spoof_title">Netflix spoof</string>
     <string name="netflix_spoof_summary">Spoof your device as different model for Netflix</string>
 
+    <!-- Status bar padding -->
+    <string name="statusbar_padding">Statusbar Padding</string>
+    <string name="statusbar_top_padding">Top</string>
+    <string name="statusbar_left_padding">Left</string>
+    <string name="statusbar_right_padding">Right</string>
+
 </resources>
