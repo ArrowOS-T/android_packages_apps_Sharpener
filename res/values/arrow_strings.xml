@@ -179,4 +179,8 @@
     <string name="google_spoof_summary">Spoof a few google apps to Pixel 8 Pro</string>
     <string name="google_spoof_option_disabled">Enabling Google apps spoofing is not needed by current device</string>
 
+    <!-- PIF spoofing -->
+    <string name="pif_spoofing_title">Select PIF JSON File</string>
+    <string name="pif_spoofing_summary">Pick PIF JSON file to be used for spoofing play integrity</string>
+
 </resources>
