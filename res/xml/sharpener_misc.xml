@@ -24,11 +24,18 @@
         android:summary="@string/all_props_summary"
         android:defaultValue="true" />
 
+    <Preference
+        android:key="pif_json_file_preference"
+        android:title="@string/pif_spoofing_title"
+        android:dependency="persist.sys.pixelprops.all"
+        android:summary="@string/pif_spoofing_summary"/>    
+
     <!-- GMS spoof -->
     <com.arrow.support.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.pixelprops.gms"
         android:title="@string/gms_spoof_title"
         android:summary="@string/gms_spoof_summary"
+        android:dependency="persist.sys.pixelprops.all"
         android:defaultValue="true" />
 
     <!-- Unlimited google photos storage -->
@@ -36,12 +43,14 @@
         android:key="persist.sys.pixelprops.gphotos"
         android:title="@string/use_photos_spoof_title"
         android:summary="@string/use_photos_spoof_summary"
+        android:dependency="persist.sys.pixelprops.all"
         android:defaultValue="true" />
 
     <com.arrow.support.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.pixelprops.google"
         android:title="@string/google_spoof_title"
         android:summary="@string/google_spoof_summary"
+        android:dependency="persist.sys.pixelprops.all"
         android:defaultValue="true" />    
 
     <!-- Netflix -->
