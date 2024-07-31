@@ -28,7 +28,20 @@
         android:key="pif_json_file_preference"
         android:dependency="persist.sys.pixelprops.all"
         android:title="@string/pif_spoofing_title"
-        android:summary="@string/pif_spoofing_summary"/>    
+        android:summary="@string/pif_spoofing_summary"/> 
+
+    <com.arrow.support.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.gameprops.enabled"
+        android:title="@string/gameprops_title"
+        android:summary="@string/gameprops_summary"
+        android:dependency="persist.sys.pixelprops.all"
+        android:defaultValue="false" />
+
+    <Preference
+        android:key="game_props_json_file_preference"
+        android:title="@string/gameprops_load_json_title"
+        android:dependency="persist.sys.gameprops.enabled"
+        android:summary="@string/gameprops_load_json_summary" />       
 
     <!-- GMS spoof -->
     <com.arrow.support.preferences.SystemPropertySwitchPreference
