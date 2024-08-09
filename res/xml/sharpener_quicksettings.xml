@@ -24,6 +24,12 @@
         android:summary="@string/qs_show_data_usage_summary"
         android:defaultValue="true" />
 
+    <com.arrow.support.preferences.SystemSettingSwitchPreference
+        android:key="qs_widgets_enabled"
+        android:title="@string/qs_widgets_enabled_title"
+        android:summary="@string/qs_widgets_enabled_summary"
+        android:defaultValue="false" />    
+
 	<PreferenceCategory
         android:key="quick_settings_brighness_category"
         android:title="@string/qs_show_brightness_slider_title">

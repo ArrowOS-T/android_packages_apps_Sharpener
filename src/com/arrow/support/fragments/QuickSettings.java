@@ -18,12 +18,14 @@ package com.arrow.support.fragments;
 
 import com.android.internal.logging.nano.MetricsProto;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.os.UserHandle;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.res.Resources;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -44,6 +46,8 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import android.util.Log;
 
+import com.android.internal.util.arrow.SystemRestartUtils;
+
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
@@ -52,16 +56,30 @@ import java.util.Collections;
 
 public class QuickSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
+    private static final String KEY_QS_WIDGETS_ENABLED  = "qs_widgets_enabled";
+
+    private Preference mQsWidgetsPref;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.sharpener_quicksettings);
         PreferenceScreen prefScreen = getPreferenceScreen();
-        }
+        mQsWidgetsPref = findPreference(KEY_QS_WIDGETS_ENABLED);
+        mQsWidgetsPref.setOnPreferenceChangeListener(this);
+    }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        Context mContext = getActivity().getApplicationContext();
+        ContentResolver resolver = mContext.getContentResolver();
+        
+        if (preference == mQsWidgetsPref) {
+            Settings.Secure.putIntForUser(resolver,
+                Settings.Secure.QS_SHOW_BRIGHTNESS_SLIDER, 0, UserHandle.USER_CURRENT);
+            SystemRestartUtils.showSystemUIRestartDialog(getActivity());
+            return true;
+        }
         return false;
     }
 
