@@ -89,13 +89,13 @@ public class SpoofSettings extends SettingsPreferenceFragment implements Prefere
         mGamePropsJsonFilePreference = findPreference(KEY_GAME_PROPS_JSON_FILE_PREFERENCE);
         mUpdateJsonButton = findPreference(KEY_UPDATE_JSON_BUTTON);
 
+        String model = SystemProperties.get("ro.product.model");
         isPixelDevice = SystemProperties.get("ro.soc.manufacturer").equals("Google");
-        if (!isPixelDevice) {
-            mPropOptions.setEnabled(false);
-            mPropOptions.setSummary(R.string.spoof_option_disabled);
-        } else {
-            mGmsSpoof.setDependency(SYS_PROP_OPTIONS);
-            mGphotosSpoof.setDependency(SYS_PROP_OPTIONS);
+
+        mGmsSpoof.setDependency(SYS_PROP_OPTIONS);
+        mGphotosSpoof.setDependency(SYS_PROP_OPTIONS);
+
+        if (isPixelDevice && isNewTensorDevice(model)) {
             mGoogleSpoof.setEnabled(false);
             mGoogleSpoof.setSummary(R.string.google_spoof_option_disabled);
         }
@@ -128,6 +128,10 @@ public class SpoofSettings extends SettingsPreferenceFragment implements Prefere
                 return true;
             });
         }
+    }
+    
+    private boolean isNewTensorDevice(String model) {
+        return model.matches("Pixel [7-9][a-zA-Z ]*");
     }
 
     private void openFileSelector(int requestCode) {
