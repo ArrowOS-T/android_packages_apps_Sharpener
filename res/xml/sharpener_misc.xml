@@ -25,10 +25,16 @@
         android:defaultValue="true" />
 
     <Preference
+        android:key="update_pif_json"
+        android:title="@string/update_pif_json_title"
+        android:summary="@string/update_pif_json_summary"
+        android:dependency="persist.sys.pixelprops.gms" />    
+
+    <Preference
         android:key="pif_json_file_preference"
-        android:dependency="persist.sys.pixelprops.all"
         android:title="@string/pif_spoofing_title"
-        android:summary="@string/pif_spoofing_summary"/> 
+        android:summary="@string/pif_spoofing_summary"
+        android:dependency="persist.sys.pixelprops.gms"/> 
 
     <com.arrow.support.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.gameprops.enabled"
