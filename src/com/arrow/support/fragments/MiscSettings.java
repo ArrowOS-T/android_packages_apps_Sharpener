@@ -46,12 +46,15 @@ import android.view.View;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import android.util.Log;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.Iterator;
 import java.util.List;
@@ -73,6 +76,7 @@ public class MiscSettings extends SettingsPreferenceFragment implements OnPrefer
     private static final String SYS_GPHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
     private static final String KEY_PIF_JSON_FILE_PREFERENCE = "pif_json_file_preference";
     private static final String KEY_GAME_PROPS_JSON_FILE_PREFERENCE = "game_props_json_file_preference";
+    private static final String KEY_UPDATE_JSON_BUTTON = "update_pif_json";
 
     private boolean isPixelDevice;
 
@@ -84,6 +88,7 @@ public class MiscSettings extends SettingsPreferenceFragment implements OnPrefer
     private Preference mPifJsonFilePreference;
     private Preference mGamePropsJsonFilePreference;
     private Preference mGamePropsSpoof;
+    private Preference mUpdateJsonButton;
 
     private Handler mHandler;
 
@@ -104,6 +109,7 @@ public class MiscSettings extends SettingsPreferenceFragment implements OnPrefer
         mPropOptions = findPreference(SYS_PROP_OPTIONS);
         mPifJsonFilePreference = findPreference(KEY_PIF_JSON_FILE_PREFERENCE);
         mGamePropsJsonFilePreference = findPreference(KEY_GAME_PROPS_JSON_FILE_PREFERENCE);
+        mUpdateJsonButton = findPreference(KEY_UPDATE_JSON_BUTTON);
 
         isPixelDevice = SystemProperties.get("ro.soc.manufacturer").equals("Google");
         if (!isPixelDevice) {
@@ -132,6 +138,11 @@ public class MiscSettings extends SettingsPreferenceFragment implements OnPrefer
             openFileSelector(10002);
             return true;
         });
+
+        mUpdateJsonButton.setOnPreferenceClickListener(preference -> {
+            updatePropertiesFromUrl("https://raw.githubusercontent.com/chiteroman/PlayIntegrityFix/main/module/pif.json");
+            return true;
+        });
     }
 
     private void openFileSelector(int requestCode) {
@@ -153,6 +164,42 @@ public class MiscSettings extends SettingsPreferenceFragment implements OnPrefer
                 }
             }
         }
+    }
+
+    private void updatePropertiesFromUrl(String urlString) {
+        new Thread(() -> {
+            try {
+                URL url = new URL(urlString);
+                HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+                try (InputStream inputStream = urlConnection.getInputStream()) {
+                    String json = new String(inputStream.readAllBytes(), StandardCharsets.UTF_8);
+                    Log.d(TAG, "Downloaded JSON data: " + json);
+                    JSONObject jsonObject = new JSONObject(json);
+                    String spoofedModel = jsonObject.optString("MODEL", "Unknown model");
+                    for (Iterator<String> it = jsonObject.keys(); it.hasNext(); ) {
+                        String key = it.next();
+                        String value = jsonObject.getString(key);
+                        Log.d(TAG, "Setting property: persist.sys.pihooks_" + key + " = " + value);
+                        SystemProperties.set("persist.sys.pihooks_" + key, value);
+                    }
+                    mHandler.post(() -> {
+                        String toastMessage = getString(R.string.toast_spoofing_success, spoofedModel);
+                        Toast.makeText(getContext(), toastMessage, Toast.LENGTH_LONG).show();
+                    });
+
+                } finally {
+                    urlConnection.disconnect();
+                }
+            } catch (Exception e) {
+                Log.e(TAG, "Error downloading JSON or setting properties", e);
+                mHandler.post(() -> {
+                    Toast.makeText(getContext(), R.string.toast_spoofing_failure, Toast.LENGTH_LONG).show();
+                });
+            }
+            mHandler.postDelayed(() -> {
+                SystemRestartUtils.showSystemRestartDialog(getContext());
+            }, 1250);
+        }).start();
     }
 
     private void loadPifJson(Uri uri) {
