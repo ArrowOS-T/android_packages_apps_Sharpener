@@ -19,7 +19,6 @@ package com.arrow.support.fragments;
 import com.android.internal.logging.nano.MetricsProto;
 
 import android.os.Bundle;
-import android.os.SystemProperties;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
@@ -42,7 +41,6 @@ import android.text.TextUtils;
 import android.view.View;
 
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settingslib.development.SystemPropPoker;
 import com.android.settings.Utils;
 import android.util.Log;
 
@@ -56,18 +54,8 @@ import com.android.internal.util.arrow.SystemRestartUtils;
 
 public class MiscSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
     
-    private static final String KEY_GAMES_SPOOF = "use_games_spoof";
-    private static final String KEY_PHOTOS_SPOOF = "use_photos_spoof";
-    private static final String KEY_NETFLIX_SPOOF = "use_netflix_spoof";
-
-    private static final String SYS_GAMES_SPOOF = "persist.sys.pixelprops.games";
-    private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
-    private static final String SYS_NETFLIX_SPOOF = "persist.sys.spoof_netflix";
     private static final String SYS_GMS_SPOOF = "persist.sys.pixelprops.gms";
 
-    private SwitchPreference mGamesSpoof;
-    private SwitchPreference mPhotosSpoof;
-    private SwitchPreference mNetFlixSpoof;
     private Preference mGmsSpoof;
 
     @Override
@@ -77,18 +65,6 @@ public class MiscSettings extends SettingsPreferenceFragment implements OnPrefer
         PreferenceScreen prefScreen = getPreferenceScreen();
 
         ContentResolver resolver = getActivity().getContentResolver();
-
-        mGamesSpoof = (SwitchPreference) prefScreen.findPreference(KEY_GAMES_SPOOF);
-        mGamesSpoof.setChecked(SystemProperties.getBoolean(SYS_GAMES_SPOOF, false));
-        mGamesSpoof.setOnPreferenceChangeListener(this);
-
-        mPhotosSpoof = (SwitchPreference) prefScreen.findPreference(KEY_PHOTOS_SPOOF);
-        mPhotosSpoof.setChecked(SystemProperties.getBoolean(SYS_PHOTOS_SPOOF, true));
-        mPhotosSpoof.setOnPreferenceChangeListener(this);
-
-        mNetFlixSpoof = (SwitchPreference) findPreference(KEY_NETFLIX_SPOOF);
-        mNetFlixSpoof.setChecked(SystemProperties.getBoolean(SYS_NETFLIX_SPOOF, false));
-        mNetFlixSpoof.setOnPreferenceChangeListener(this);
 
         mGmsSpoof = (Preference) findPreference(SYS_GMS_SPOOF);
         mGmsSpoof.setOnPreferenceChangeListener(this);
@@ -112,22 +88,7 @@ public class MiscSettings extends SettingsPreferenceFragment implements OnPrefer
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         final String key = preference.getKey();
-        if (preference == mGamesSpoof) {
-            boolean value = (Boolean) objValue;
-            SystemProperties.set(SYS_GAMES_SPOOF, value ? "true" : "false");
-            SystemPropPoker.getInstance().poke();
-            return true;
-        } else if (preference == mPhotosSpoof) {
-            boolean value = (Boolean) objValue;
-            SystemProperties.set(SYS_PHOTOS_SPOOF, value ? "true" : "false");
-            SystemPropPoker.getInstance().poke();
-            return true;
-        } else if (preference == mNetFlixSpoof) {
-            boolean value = (Boolean) objValue;
-            SystemProperties.set(SYS_NETFLIX_SPOOF, value ? "true" : "false");
-            SystemPropPoker.getInstance().poke();
-            return true;
-        } else if (preference == mGmsSpoof) {
+        if (preference == mGmsSpoof) {
             SystemRestartUtils.showSystemRestartDialog(getContext());
             return true;
         }
