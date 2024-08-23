@@ -18,4 +18,67 @@
     android:title="@string/sharpener_about_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+     <!-- Arrow logo -->
+     <com.android.settingslib.widget.LayoutPreference
+          android:key="arrow_logo"
+          android:layout="@layout/arrow_logo"
+          android:selectable="false"/>
+
+     <PreferenceCategory
+          android:key="RomInfo"
+          android:title="@string/rom_info_title">
+
+          <!-- ArrowOS Info -->
+          <com.android.settingslib.widget.TopIntroPreference
+               android:title="@string/about_info" />
+
+          <!-- ArrowOS-Fork Info -->
+          <com.android.settingslib.widget.TopIntroPreference
+               android:title="@string/about_fork_info" />     
+
+          <!-- ArrowOS Website -->
+          <Preference
+               android:title="@string/about_website_title"
+               android:icon="@drawable/ic_website"
+               android:summary="@string/about_website_summary"
+               settings:layout="@layout/card_interface_single">
+               <intent
+                    android:action="android.intent.action.VIEW"
+                    android:data="https://arrowos.net" />
+          </Preference>
+
+          <!-- ArrowOS Github -->
+          <Preference
+               android:title="@string/about_github_title"
+               android:icon="@drawable/ic_github"
+               android:summary="@string/about_github_summary"
+               settings:layout="@layout/card_interface_single">
+               <intent
+                    android:action="android.intent.action.VIEW"
+                    android:data="https://github.com/ArrowOS" />
+          </Preference>
+
+          <!-- ArrowOS-Fork Github -->
+          <Preference
+               android:title="@string/about_fork_github_title"
+               android:icon="@drawable/ic_github"
+               android:summary="@string/about_fork_github_summary"
+               settings:layout="@layout/card_interface_single">
+               <intent
+                    android:action="android.intent.action.VIEW"
+                    android:data="https://github.com/ArrowOS-T" />
+          </Preference>
+
+          <!-- Source Manager of ArrowOS-Fork -->
+          <Preference
+               android:title="@string/about_source_manager_title"
+               android:icon="@drawable/ic_people_person"
+               android:summary="@string/about_source_manager_summary"
+               settings:layout="@layout/card_interface_single">
+               <intent
+                    android:action="android.intent.action.VIEW"
+                    android:data="https://t.me/JustVerz" />
+          </Preference>
+
+     </PreferenceCategory>
 </PreferenceScreen>
