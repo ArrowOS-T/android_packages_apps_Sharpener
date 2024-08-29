@@ -36,4 +36,11 @@
           android:summary="@string/pie_animation_style_summary"
           android:defaultValue="false" />
 
+    <!-- Cache Cleaner -->
+    <com.arrow.support.preferences.SystemSettingSwitchPreference
+        android:key="cache_cleaner_enabled"
+        android:title="@string/cache_cleaner_title"
+        android:summary="@string/cache_cleaner_summary"
+        android:defaultValue="false" />      
+
 </PreferenceScreen>
