@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2024 ArrowOS-T
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Extension Title -->
+    <string name="sharpener_title">Pengasah</string>
+
+    <!-- Categories -->
+    <string name="sharpener_about_title">Tentang Kami</string>
+    <string name="sharpener_about_summary">Semua tentang OS ini dapat ditemukan di sini.</string>
+    <string name="sharpener_lockscreen_title">Layar Kunci</string>
+    <string name="sharpener_lockscreen_summary">Nyalakan ponsel Anda dan atur area layar kunci Anda</string>
+    <string name="sharpener_themes_title">Tema</string>
+    <string name="sharpener_themes_summary">Selamat datang di ruang kustomisasi.</string>
+    <string name="sharpener_misc_title">Lainnya</string>
+    <string name="sharpener_misc_summary">Berbagai fitur yang meningkatkan fungsi ponsel Anda</string>
+    <string name="sharpener_quicksettings_title">Pengaturan Cepat</string>
+    <string name="sharpener_quicksettings_summary">Buat area pengaturan cepat terbaik Anda</string>
+    <string name="sharpener_statusbar_title">Bar Status</string>
+    <string name="sharpener_statusbar_summary">Atur atau sesuaikan area bar status</string>
+    <string name="sharpener_notifications_title">Notifikasi</string>
+    <string name="sharpener_notifications_summary">Ada fitur yang mengelola notifikasi</string>
+    <string name="sharpener_gestures_title">Gestur</string>
+    <string name="sharpener_gestures_summary">Segala hal tentang gestur diatur di sini!</string>
+    <string name="sharpener_buttons_title">Tombol</string>
+    <string name="sharpener_buttons_summary">Bawa pengaturan tombol Anda di sini.</string>
+
+    <!-- ROM Information -->
+    <string name="about_info">ArrowOS adalah proyek berbasis AOSP yang dimulai dengan tujuan menjaga semuanya tetap sederhana, bersih, dan terorganisir. Kami menambahkan fitur yang akan berguna dalam jangka panjang, sambil bertujuan memberikan kinerja yang lancar dan masa pakai baterai yang lebih lama.</string>
+    <string name="about_fork_info">Untuk proyek ini, Pengelola Sumber terus memperbarui ArrowOS dengan patch keamanan dan menambahkan beberapa fitur yang berguna untuk penggunaan jangka panjang. Proyek ini hanya untuk tujuan pribadi dan pengembang lain juga dapat membangun untuk perangkat-nya masing-masing.</string>
+    <string name="rom_info_title">Informasi tentang ArrowOS</string>
+    <string name="about_website_title">Situs Web</string>
+    <string name="about_website_summary">Jangan ragu untuk mengunjungi situs web ArrowOS</string>
+    <string name="about_github_title" translatable="false">ArrowOS GitHub</string>
+    <string name="about_github_summary">Lihat GitHub resmi ArrowOS</string>
+    <string name="about_fork_github_title" translatable="false">ArrowOS-Fork GitHub</string>
+    <string name="about_fork_github_summary">Lihat GitHub ArrowOS-Fork</string>
+    <string name="about_source_manager_title" translatable="false">Pengelola Sumber</string>
+    <string name="about_source_manager_summary">Iverz Asterix</string>
+
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Atur Ulang</string>
+    <string name="cancel">Batal</string>
+    <string name="save">Simpan</string>
+    <string name="none_string">Tidak Ada</string>
+
+    <!-- Power menu on secure lockscreen -->
+    <string name="lockscreen_enable_power_menu_title">Menu daya di layar kunci</string>
+    <string name="lockscreen_enable_power_menu_summary">Izinkan akses ke menu daya di layar kunci yang aman</string>
+
+    <!-- QS in Lockscreen -->
+    <string name="disable_qs_title">Sembunyikan QS di layar kunci yang aman</string>
+    <string name="disable_qs_summary">Menyembunyikan QS jika perangkat terkunci. Tidak menonaktifkan bayangan notifikasi</string>
+
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">Tampilkan ikon 4G</string>
+    <string name="show_fourg_icon_summary">Tampilkan ikon 4G di ikon sinyal, bukan LTE</string>
+
+    <!-- Media art -->
+    <string name="lockscreen_media_art_options_title">Seni sampul media</string>
+    <string name="media_art_title">Seni sampul media</string>
+    <string name="media_art_summary">Tampilkan seni sampul media jika tersedia</string>
+
+    <!-- Lock screen cover art -->
+    <string name="lockscreen_media_blur_title">Tingkat blur seni media</string>
+
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_show_brightness_slider_title">Slider Kecerahan</string>
+    <string name="qs_show_brightness_slider_never">Jangan pernah tampilkan</string>
+    <string name="qs_show_brightness_slider_expanded">Tampilkan saat diperluas</string>
+    <string name="qs_show_brightness_slider_always">Selalu tampilkan</string>
+    <string name="qs_show_brightness_slider_not_expanded">Tampilkan saat tidak diperluas</string>
+    <string name="qs_brightness_slider_position_title">Posisi</string>
+    <string name="qs_brightness_slider_position_top">Atas</string>
+    <string name="qs_brightness_slider_position_bottom">Bawah</string>
+
+    <!-- Quick Settings brightness icon -->
+    <string name="qs_show_auto_brightness_title">Ikon kecerahan otomatis</string>
+    <string name="qs_show_auto_brightness_summary">Tampilkan tombol untuk kecerahan adaptif di dekat slider</string>
+
+    <!-- Max visible notification icons -->
+    <string name="max_visible_notification_icons_title">Jumlah ikon notifikasi</string>
+    <string name="max_visible_notification_icons_summary">Pengaturan jumlah maksimum ikon notifikasi di bar status</string>
+
+    <!-- Fingerprint authentication vibration -->
+    <string name="fingerprint_category">Sidik Jari</string>
+    <string name="fprint_error_vib_title">Getar kesalahan autentikasi sidik jari</string>
+    <string name="fprint_error_vib_summary">Getar saat kesalahan autentikasi sidik jari</string>
+    <string name="fprint_success_vib_title">Getaran autentikasi sidik jari berhasil</string>
+    <string name="fprint_success_vib_summary">Getar saat autentikasi sidik jari berhasil</string>
+
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Informasi pengisian baterai di layar kunci</string>
+    <string name="lockscreen_battery_info_summary">Tampilkan informasi pengisian daya dan suhu baterai di layar kunci saat mengisi daya</string>
+
+    <!-- Android P animation style -->
+    <string name="pie_animation_style_title">Animasi Android P</string>
+    <string name="pie_animation_style_summary">Aktifkan animasi "Default" Android Pie</string>
+
+    <!-- Per-app spoofing -->
+    <string name="gameprops_title">Aktifkan spoofing per-aplikasi</string>
+    <string name="gameprops_summary">Mengaktifkan opsi spoofing per-aplikasi di dalam PixelProps</string>
+    <string name="gameprops_load_json_title">Pilih File Per-aplikasi JSON Props</string>
+    <string name="gameprops_load_json_summary">Pilih file JSON per-aplikasi yang akan digunakan untuk spoofing game</string>
+
+    <string name="spoof_option_disabled">Menonaktifkan spoofing PixelProps tidak didukung oleh perangkat saat ini</string>
+
+    <!-- Unlimited google photos storage -->
+    <string name="use_photos_spoof_title">Penyimpanan Foto Tanpa Batas</string>
+    <string name="use_photos_spoof_summary">Spoof perangkat Anda sebagai Pixel XL hanya untuk aplikasi Google Photos untuk memberikan penyimpanan tak terbatas untuk cadangan</string>
+
+    <!-- Status bar padding -->
+    <string name="statusbar_padding">Padding Bar Status</string>
+    <string name="statusbar_top_padding">Atas</string>
+    <string name="statusbar_left_padding">Kiri</string>
+    <string name="statusbar_right_padding">Kanan</string>
+
+    <!-- QS Widgets -->
+    <string name="qs_widgets_enabled_title">Widget QuickSettings</string>
+    <string name="qs_widgets_enabled_summary">Tampilkan widget quicksettings untuk akses cepat</string>
+
+    <!-- GMS Spoof -->
+    <string name="gms_spoof_title">Aktifkan spoof GMS</string>
+    <string name="gms_spoof_summary">Spoof perangkat Anda untuk melewati Google Play Attestation</string>
+
+    <!-- Enable all props -->
+    <string name="all_props_title">Aktifkan opsi spoof</string>
+    <string name="all_props_summary">Mengaktifkan semua opsi spoof dalam PixelProps</string>
+
+    <!-- Spoof google app props -->
+    <string name="google_spoof_title">Spoof aplikasi Google</string>
+    <string name="google_spoof_summary">Spoof beberapa aplikasi Google ke Pixel 8 Pro</string>
+    <string name="google_spoof_option_disabled">Mengaktifkan spoofing aplikasi Google tidak diperlukan oleh perangkat saat ini</string>
+
+    <!-- PIF spoofing -->
+    <string name="pif_spoofing_title">Pilih File PIF JSON</string>
+    <string name="pif_spoofing_summary">Pilih file PIF JSON yang akan digunakan untuk spoofing play integrity</string>
+
+    <!-- Play Integrity Fix JSON Update -->
+    <string name="toast_spoofing_success">Berhasil mengunduh pif.json. Spoofing sebagai %1$s untuk play integrity.</string>
+    <string name="toast_spoofing_failure">Gagal melakukan spoof properti.</string>
+    <string name="update_pif_json_title">Perbarui Play Integrity Fix</string>
+    <string name="update_pif_json_summary">Perbarui perangkat spoofing PIF, memerlukan koneksi internet.</string>
+    <string name="show_pif_properties_title">Properti Play Integrity Fix</string>
+    <string name="show_pif_properties_summary">Tampilkan semua properti PIF yang saat ini disetel</string>
+    <string name="error_loading_properties">Kesalahan memuat properti PIF</string>
+
+</resources>

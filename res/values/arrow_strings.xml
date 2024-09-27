@@ -40,7 +40,7 @@
 
     <!-- ROM Information -->
     <string name="about_info">ArrowOS is an AOSP based project started with the goal of keeping things simple, clean, and organized. We added features that will be helpful in the long run, while aiming to deliver smooth performance and longer battery life..</string>
-    <string name="about_fork_info">For this project, Source Manager keep ArrowOS still alive with updating security patch and adding some feature which useful for long run use. This project only for personal purpose and all developer can be build too for our device.</string>
+    <string name="about_fork_info">For this project, the Source Manager keeps ArrowOS updated with security patches and adds some features that are useful for long-term use. This project is for personal purposes only, and other developers can also build it for their respective devices.</string>
     <string name="rom_info_title">Information about ArrowOS</string>
     <string name="about_website_title">Website</string>
     <string name="about_website_summary">Feel free to drop by ArrowOS website</string>
