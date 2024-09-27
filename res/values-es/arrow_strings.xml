@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2024 ArrowOS-T
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+     <!-- Título de la Extensión -->
+     <string name="sharpener_title">Afilador</string>
+
+     <!-- Categorías -->
+     <string name="sharpener_about_title">Acerca de Nosotros</string>
+     <string name="sharpener_about_summary">Toda la información sobre este sistema operativo está aquí.</string>
+     <string name="sharpener_lockscreen_title">Pantalla de bloqueo</string>
+     <string name="sharpener_lockscreen_summary">Enciende tu teléfono y ajusta el área de bloqueo de pantalla.</string>
+     <string name="sharpener_themes_title">Temas</string>
+     <string name="sharpener_themes_summary">Bienvenido a la sala de personalización.</string>
+     <string name="sharpener_misc_title">Varios</string>
+     <string name="sharpener_misc_summary">Características diversas que mejoran el funcionamiento de tu teléfono.</string>
+     <string name="sharpener_quicksettings_title">Ajustes rápidos</string>
+     <string name="sharpener_quicksettings_summary">Crea tu mejor área de ajustes rápidos.</string>
+     <string name="sharpener_statusbar_title">Barra de estado</string>
+     <string name="sharpener_statusbar_summary">Configura o personaliza el área de la barra de estado.</string>
+     <string name="sharpener_notifications_title">Notificaciones</string>
+     <string name="sharpener_notifications_summary">Hay una función para gestionar notificaciones.</string>
+     <string name="sharpener_gestures_title">Gestos</string>
+     <string name="sharpener_gestures_summary">¡Todo sobre gestos está aquí!</string>
+     <string name="sharpener_buttons_title">Botones</string>
+     <string name="sharpener_buttons_summary">Accede a la configuración de botones aquí.</string>
+
+     <!-- Información del ROM -->
+     <string name="about_info">ArrowOS es un proyecto basado en AOSP, iniciado con el objetivo de mantener las cosas simples, limpias y organizadas. Añadimos funciones que serán útiles a largo plazo, mientras intentamos ofrecer un rendimiento fluido y una mayor duración de la batería.</string>
+     <string name="about_fork_info">Para este proyecto, el Administrador de Fuentes mantiene ArrowOS actualizado con parches de seguridad y agrega algunas características que son útiles para su uso a largo plazo. Este proyecto es solo para uso personal, y otros desarrolladores también pueden construirlo para sus respectivos dispositivos.</string>
+     <string name="rom_info_title">Información sobre ArrowOS</string>
+     <string name="about_website_title">Sitio web</string>
+     <string name="about_website_summary">Visita libremente el sitio web de ArrowOS.</string>
+     <string name="about_github_title" translatable="false">ArrowOS GitHub</string>
+     <string name="about_github_summary">Revisa el GitHub original de ArrowOS.</string>
+     <string name="about_fork_github_title" translatable="false">ArrowOS-Fork GitHub</string>
+     <string name="about_fork_github_summary">Consulta el GitHub de ArrowOS-Fork.</string>
+     <string name="about_source_manager_title" translatable="false">Gestor de Fuentes</string>
+     <string name="about_source_manager_summary">Iverz Asterix</string>
+
+     <!-- Cadenas generales -->
+     <string name="ok">Aceptar</string>
+     <string name="reset">Restablecer</string>
+     <string name="cancel">Cancelar</string>
+     <string name="save">Guardar</string>
+     <string name="none_string">Ninguno</string>
+
+     <!-- Menú de energía en pantalla de bloqueo segura -->
+     <string name="lockscreen_enable_power_menu_title">Menú de energía en pantalla de bloqueo</string>
+     <string name="lockscreen_enable_power_menu_summary">Permitir acceso al menú de energía en pantalla de bloqueo segura.</string>
+
+     <!-- QS en Pantalla de Bloqueo -->
+     <string name="disable_qs_title">Ocultar QS en pantalla de bloqueo segura</string>
+     <string name="disable_qs_summary">Oculta QS si el dispositivo está bloqueado. No deshabilita la cortina de notificaciones.</string>
+
+     <!-- Icono 4G -->
+     <string name="show_fourg_icon_title">Mostrar icono 4G</string>
+     <string name="show_fourg_icon_summary">Muestra el icono de 4G en lugar de LTE.</string>
+
+     <!-- Arte de medios -->
+     <string name="lockscreen_media_art_options_title">Portada de medios</string>
+     <string name="media_art_title">Portada de medios</string>
+     <string name="media_art_summary">Muestra la portada de medios cuando esté disponible.</string>
+
+     <!-- Arte en pantalla de bloqueo -->
+     <string name="lockscreen_media_blur_title">Nivel de desenfoque de arte de medios</string>
+
+     <!-- Control deslizante de brillo en Ajustes Rápidos -->
+     <string name="qs_show_brightness_slider_title">Control deslizante de brillo</string>
+     <string name="qs_show_brightness_slider_never">Nunca mostrar</string>
+     <string name="qs_show_brightness_slider_expanded">Mostrar cuando esté expandido</string>
+     <string name="qs_show_brightness_slider_always">Mostrar siempre</string>
+     <string name="qs_show_brightness_slider_not_expanded">Mostrar cuando no esté expandido</string>
+     <string name="qs_brightness_slider_position_title">Posición</string>
+     <string name="qs_brightness_slider_position_top">Arriba</string>
+     <string name="qs_brightness_slider_position_bottom">Abajo</string>
+
+     <!-- Icono de brillo automático en Ajustes Rápidos -->
+     <string name="qs_show_auto_brightness_title">Icono de brillo automático</string>
+     <string name="qs_show_auto_brightness_summary">Mostrar alternador para brillo adaptativo cerca del control deslizante.</string>
+
+     <!-- Máximo de iconos de notificaciones visibles -->
+     <string name="max_visible_notification_icons_title">Cantidad de iconos de notificación</string>
+     <string name="max_visible_notification_icons_summary">Ajusta el máximo de iconos de notificación en la barra de estado.</string>
+
+     <!-- Vibración en autenticación de huella dactilar -->
+     <string name="fingerprint_category">Huella dactilar</string>
+     <string name="fprint_error_vib_title">Vibración de error de huella dactilar</string>
+     <string name="fprint_error_vib_summary">Vibrar al fallar la autenticación de huella dactilar.</string>
+     <string name="fprint_success_vib_title">Vibración en autenticación de huella dactilar</string>
+     <string name="fprint_success_vib_summary">Vibrar al autenticar correctamente la huella dactilar.</string>
+
+     <!-- Información de batería en pantalla de bloqueo -->
+     <string name="lockscreen_battery_info_title">Información de carga en pantalla de bloqueo</string>
+     <string name="lockscreen_battery_info_summary">Muestra la corriente máxima y el voltaje negociados por el cargador, y la temperatura de la batería en la pantalla de bloqueo mientras se carga.</string>
+
+     <!-- Estilo de animación Android P -->
+     <string name="pie_animation_style_title">Animación Android P</string>
+     <string name="pie_animation_style_summary">Habilitar animaciones por defecto de Android Pie.</string>
+
+     <!-- Falsificación por aplicación -->
+     <string name="gameprops_title">Habilitar falsificación por aplicación</string>
+     <string name="gameprops_summary">Habilita opciones de falsificación por aplicación dentro de PixelProps.</string>
+     <string name="gameprops_load_json_title">Seleccionar archivo JSON para falsificación por aplicación</string>
+     <string name="gameprops_load_json_summary">Selecciona un archivo JSON por aplicación para usar en la falsificación de juegos.</string>
+
+     <string name="spoof_option_disabled">Desactivar la falsificación de PixelProps no es compatible con este dispositivo.</string>
+
+     <!-- Almacenamiento ilimitado de Google Fotos -->
+     <string name="use_photos_spoof_title">Almacenamiento ilimitado de Fotos</string>
+     <string name="use_photos_spoof_summary">Haz que tu dispositivo se vea como un Pixel XL solo en la app de Google Fotos para tener almacenamiento ilimitado para respaldos.</string>
+
+     <!-- Relleno de la barra de estado -->
+     <string name="statusbar_padding">Relleno de la barra de estado</string>
+     <string name="statusbar_top_padding">Superior</string>
+     <string name="statusbar_left_padding">Izquierda</string>
+     <string name="statusbar_right_padding">Derecha</string>
+
+     <!-- Widgets de QS -->
+     <string name="qs_widgets_enabled_title">Widgets de ajustes rápidos</string>
+     <string name="qs_widgets_enabled_summary">Mostrar widgets de ajustes rápidos para un acceso rápido</string>
+
+     <!-- Simulación de GMS -->
+     <string name="gms_spoof_title">Habilitar la simulación de GMS</string>
+     <string name="gms_spoof_summary">Simular tu dispositivo para pasar la verificación de Google Play</string>
+
+     <!-- Habilitar todas las propiedades -->
+     <string name="all_props_title">Habilitar opciones de simulación</string>
+     <string name="all_props_summary">Habilitar todas las opciones de simulación dentro de PixelProps</string>
+
+     <!-- Simulación de aplicaciones de Google -->
+     <string name="google_spoof_title">Simular aplicaciones de Google</string>
+     <string name="google_spoof_summary">Simular algunas aplicaciones de Google como Pixel 8 Pro</string>
+     <string name="google_spoof_option_disabled">No es necesario habilitar la simulación de aplicaciones de Google en este dispositivo</string>
+
+     <!-- Simulación de PIF -->
+     <string name="pif_spoofing_title">Seleccionar archivo JSON de PIF</string>
+     <string name="pif_spoofing_summary">Seleccionar archivo JSON de PIF para utilizar en la simulación de la integridad de Play</string>
+
+     <!-- Actualización del archivo JSON de Play Integrity Fix -->
+     <string name="toast_spoofing_success">Descarga de pif.json exitosa. Simulando como %1$s para la integridad de Play.</string>
+     <string name="toast_spoofing_failure">Error al simular las propiedades.</string>
+     <string name="update_pif_json_title">Actualizar Play Integrity Fix</string>
+     <string name="update_pif_json_summary">Actualizar el dispositivo de simulación de PIF, requiere conexión a internet.</string>
+     <string name="show_pif_properties_title">Propiedades de Play Integrity Fix</string>
+     <string name="show_pif_properties_summary">Mostrar todas las propiedades de PIF configuradas actualmente</string>
+     <string name="error_loading_properties">Error al cargar las propiedades de PIF</string>
+
+     <!-- Iconos coloridos en la barra de estado -->
+     <string name="statusbar_colored_icons_title">Iconos coloridos</string>
+     <string name="statusbar_colored_icons_summary">Usa los íconos de la aplicación adecuados para los íconos de notificación en la barra de estado</string>
+
+     <!-- Fondo de chip del reloj en la barra de estado -->
+     <string name="statusbar_clock_chip_title">Fondo de chip</string>
+     <string name="statusbar_clock_chip_summary">Mostrar un chip acentuado detrás del reloj</string>
+
+     <!-- Categoría de personalización de temas -->
+     <string name="theme_customization_category">Personalización de temas</string>
+
+     <!-- Personalización de fuentes de encabezado y cuerpo -->
+     <string name="theme_customization_font_title">Fuente de encabezado / cuerpo</string>
+     <string name="theme_customization_font_summary">Configurar el estilo de fuente del sistema</string>
+
+     <!-- Personalización de la forma de íconos -->
+     <string name="theme_customization_icon_shape_title">Forma de íconos</string>
+     <string name="theme_customization_icon_shape_summary">Configurar el estilo de forma de íconos del sistema</string>
+
+     <!-- Paquete de íconos del sistema -->
+     <string name="theme_customization_icon_pack_title">Paquete de íconos</string>
+     <string name="theme_customization_icon_pack_summary">Configurar el estilo del paquete de íconos personalizado</string>
+
+     <!-- Notificación estilo "Island" -->
+     <string name="island_notification_title">Notificación estilo "Island"</string>
+     <string name="island_notification_summary">Mostrar notificaciones heads-up en el estilo de "Dynamic Island"</string>
+     <string name="island_notification_now_playing_title">Reproduciendo ahora</string>
+     <string name="island_notification_now_playing_summary">Mostrar la canción que se está reproduciendo actualmente en el estilo de "Dynamic Island"</string>
+
+     <string name="island_notification_footer_text">
+          La función de notificación estilo "Island", inspirada en la "Dynamic Island" de iOS, transforma las notificaciones heads-up de Android en una utilidad compacta de acceso rápido.\n\nLos controles de acceso rápido a "Island" incluyen las siguientes características:\n1. Toca la notificación estilo "Island" para contestar rápidamente llamadas telefónicas.\n2. Mantén presionada la notificación estilo "Island" para rechazar llamadas telefónicas.\n3. Mantén presionada la notificación estilo "Island" para expandir la vista previa de la notificación.
+     </string>
+
+</resources>

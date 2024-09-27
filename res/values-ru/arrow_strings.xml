@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2024 ArrowOS-T
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Заголовок расширения -->
+    <string name="sharpener_title">Заточник</string>
+
+    <!-- Категории -->
+    <string name="sharpener_about_title">О нас</string>
+    <string name="sharpener_about_summary">Здесь можно найти всю информацию об этой ОС..</string>
+    <string name="sharpener_lockscreen_title">Экран блокировки</string>
+    <string name="sharpener_lockscreen_summary">Включите телефон и настройте экран блокировки</string>
+    <string name="sharpener_themes_title">Темы</string>
+    <string name="sharpener_themes_summary">Добро пожаловать в комнату кастомизации.</string>
+    <string name="sharpener_misc_title">Прочее</string>
+    <string name="sharpener_misc_summary">Различные функции, улучшающие работу телефона</string>
+    <string name="sharpener_quicksettings_title">Быстрые настройки</string>
+    <string name="sharpener_quicksettings_summary">Настройте область быстрых настроек</string>
+    <string name="sharpener_statusbar_title">Статус-бар</string>
+    <string name="sharpener_statusbar_summary">Настройка области статус-бара</string>
+    <string name="sharpener_notifications_title">Уведомления</string>
+    <string name="sharpener_notifications_summary">Функция управления уведомлениями</string>
+    <string name="sharpener_gestures_title">Жесты</string>
+    <string name="sharpener_gestures_summary">Все настройки жестов находятся здесь!</string>
+    <string name="sharpener_buttons_title">Кнопки</string>
+    <string name="sharpener_buttons_summary">Настройки кнопок</string>
+
+    <!-- Информация о ROM -->
+    <string name="about_info">ArrowOS — это проект на основе AOSP, начатый с целью сохранить простоту, чистоту и упорядоченность. Мы добавили функции, которые будут полезны в долгосрочной перспективе, при этом стремясь обеспечить плавную работу и более длительное время автономной работы..</string>
+    <string name="about_fork_info">Для этого проекта Менеджер Источников продолжает обновлять ArrowOS с патчами безопасности и добавляет некоторые функции, полезные для долгосрочного использования. Этот проект предназначен только для личного использования, но другие разработчики также могут собирать его для своих устройств.</string>
+    <string name="rom_info_title">Информация о ArrowOS</string>
+    <string name="about_website_title">Веб-сайт</string>
+    <string name="about_website_summary">Заходите на веб-сайт ArrowOS</string>
+    <string name="about_github_title" translatable="false">ArrowOS GitHub</string>
+    <string name="about_github_summary">Посетите оригинальный репозиторий ArrowOS на GitHub</string>
+    <string name="about_fork_github_title" translatable="false">ArrowOS-Fork GitHub</string>
+    <string name="about_fork_github_summary">Посетите репозиторий ArrowOS-Fork на GitHub</string>
+    <string name="about_source_manager_title" translatable="false">Менеджер источников</string>
+    <string name="about_source_manager_summary">Iverz Asterix</string>
+
+    <!-- Общие строки -->
+    <string name="ok">ОК</string>
+    <string name="reset">Сбросить</string>
+    <string name="cancel">Отмена</string>
+    <string name="save">Сохранить</string>
+    <string name="none_string">Нет</string>
+
+    <!-- Меню питания на экране блокировки -->
+    <string name="lockscreen_enable_power_menu_title">Меню питания на экране блокировки</string>
+    <string name="lockscreen_enable_power_menu_summary">Разрешить доступ к меню питания на защищенном экране блокировки</string>
+
+    <!-- Быстрые настройки на экране блокировки -->
+    <string name="disable_qs_title">Скрыть QS на защищенном экране блокировки</string>
+    <string name="disable_qs_summary">Скрывает QS, если устройство заблокировано. Не отключает панель уведомлений</string>
+
+    <!-- Иконка 4G -->
+    <string name="show_fourg_icon_title">Показать иконку 4G</string>
+    <string name="show_fourg_icon_summary">Показать иконку 4G вместо LTE</string>
+
+    <!-- Обложка медиа -->
+    <string name="lockscreen_media_art_options_title">Обложка медиа</string>
+    <string name="media_art_title">Обложка медиа</string>
+    <string name="media_art_summary">Показать обложку медиа, если доступно</string>
+
+    <!-- Размытие обложки на экране блокировки -->
+    <string name="lockscreen_media_blur_title">Уровень размытия обложки медиа</string>
+
+    <!-- Ползунок яркости в быстрых настройках -->
+    <string name="qs_show_brightness_slider_title">Ползунок яркости</string>
+    <string name="qs_show_brightness_slider_never">Никогда не показывать</string>
+    <string name="qs_show_brightness_slider_expanded">Показывать в расширенном виде</string>
+    <string name="qs_show_brightness_slider_always">Всегда показывать</string>
+    <string name="qs_show_brightness_slider_not_expanded">Показывать в не расширенном виде</string>
+    <string name="qs_brightness_slider_position_title">Положение</string>
+    <string name="qs_brightness_slider_position_top">Верх</string>
+    <string name="qs_brightness_slider_position_bottom">Низ</string>
+
+    <!-- Иконка автояркости в быстрых настройках -->
+    <string name="qs_show_auto_brightness_title">Иконка автояркости</string>
+    <string name="qs_show_auto_brightness_summary">Показывать переключатель адаптивной яркости рядом с ползунком</string>
+
+    <!-- Максимальное количество иконок уведомлений -->
+    <string name="max_visible_notification_icons_title">Количество иконок уведомлений</string>
+    <string name="max_visible_notification_icons_summary">Изменение максимального количества иконок уведомлений в статус-баре</string>
+
+    <!-- Вибрация при аутентификации отпечатком пальца -->
+    <string name="fingerprint_category">Отпечаток пальца</string>
+    <string name="fprint_error_vib_title">Вибрация при ошибке отпечатка пальца</string>
+    <string name="fprint_error_vib_summary">Вибрация при ошибке аутентификации отпечатка пальца</string>
+    <string name="fprint_success_vib_title">Вибрация при успешной аутентификации отпечатка пальца</string>
+    <string name="fprint_success_vib_summary">Вибрация при успешной аутентификации отпечатка пальца</string>
+
+    <!-- Информация о батарее на экране блокировки -->
+    <string name="lockscreen_battery_info_title">Информация о зарядке на экране блокировки</string>
+    <string name="lockscreen_battery_info_summary">Отображение информации о максимальном токе и напряжении зарядного устройства, а также о температуре батареи на экране блокировки во время зарядки</string>
+
+    <!-- Анимация Android P -->
+    <string name="pie_animation_style_title">Анимация Android P</string>
+    <string name="pie_animation_style_summary">Включить анимацию по умолчанию в стиле Android Pie</string>
+
+    <!-- Поддельные данные для отдельных приложений -->
+    <string name="gameprops_title">Включить поддельные данные для отдельных приложений</string>
+    <string name="gameprops_summary">Включает параметры поддельных данных для отдельных приложений в PixelProps</string>
+    <string name="gameprops_load_json_title">Выберите JSON-файл для поддельных данных приложений</string>
+    <string name="gameprops_load_json_summary">Выберите JSON-файл для поддельных данных для игр</string>
+
+    <string name="spoof_option_disabled">Отключение поддельных данных PixelProps не поддерживается на текущем устройстве</string>
+
+        <!-- Неограниченное хранилище Google Photos -->
+    <string name="use_photos_spoof_title">Неограниченное хранилище Photos</string>
+    <string name="use_photos_spoof_summary">Маскируйте ваше устройство как Pixel XL только для приложения Google Photos, чтобы обеспечить неограниченное хранилище для резервного копирования</string>
+
+    <!-- Отступы в строке состояния -->
+    <string name="statusbar_padding">Отступы строки состояния</string>
+    <string name="statusbar_top_padding">Верх</string>
+    <string name="statusbar_left_padding">Лево</string>
+    <string name="statusbar_right_padding">Право</string>
+
+    <!-- Виджеты QS -->
+    <string name="qs_widgets_enabled_title">Виджеты быстрых настроек</string>
+    <string name="qs_widgets_enabled_summary">Показать виджеты быстрых настроек для быстрого доступа</string>
+
+    <!-- Подделка GMS -->
+    <string name="gms_spoof_title">Включить подделку GMS</string>
+    <string name="gms_spoof_summary">Маскируйте ваше устройство для обхода проверки Google Play</string>
+
+    <!-- Включить все параметры подделки -->
+    <string name="all_props_title">Включить параметры подделки</string>
+    <string name="all_props_summary">Включить все параметры подделки в PixelProps</string>
+
+    <!-- Подделка параметров Google приложений -->
+    <string name="google_spoof_title">Подделка Google приложений</string>
+    <string name="google_spoof_summary">Маскируйте несколько приложений Google под Pixel 8 Pro</string>
+    <string name="google_spoof_option_disabled">Включение подделки приложений Google не требуется для текущего устройства</string>
+
+    <!-- Подделка PIF -->
+    <string name="pif_spoofing_title">Выберите PIF JSON-файл</string>
+    <string name="pif_spoofing_summary">Выберите PIF JSON-файл для подделки Play Integrity</string>
+
+    <!-- Обновление PIF JSON -->
+    <string name="toast_spoofing_success">Успешно загружен pif.json. Подделка как %1$s для Play Integrity.</string>
+    <string name="toast_spoofing_failure">Не удалось подделать свойства.</string>
+    <string name="update_pif_json_title">Обновление Play Integrity Fix</string>
+    <string name="update_pif_json_summary">Обновите устройство для подделки PIF, требуется подключение к интернету.</string>
+    <string name="show_pif_properties_title">Свойства Play Integrity Fix</string>
+    <string name="show_pif_properties_summary">Показать все установленные свойства PIF</string>
+    <string name="error_loading_properties">Ошибка загрузки свойств PIF</string>
+
+    <!-- Цветные иконки на панели состояния -->
+    <string name="statusbar_colored_icons_title">Цветные иконки</string>
+    <string name="statusbar_colored_icons_summary">Использовать правильные иконки приложений для уведомлений на панели состояния</string>
+
+    <!-- Фон чипа часов на панели состояния -->
+    <string name="statusbar_clock_chip_title">Фоновый чип</string>
+    <string name="statusbar_clock_chip_summary">Отображать выделенный чип за часами</string>
+
+    <!-- [CHAR_LIMIT=NONE] Настройки разработчика: заголовок категории настроек для наложений тем. -->
+    <string name="theme_customization_category">Настройка тем</string>
+    <!-- [CHAR_LIMIT=NONE] Настройки разработчика: заголовок настройки, которая включает наложения для настройки шрифтов заголовков и основного текста. -->
+    <string name="theme_customization_font_title">Шрифт заголовков/основного текста</string>
+    <string name="theme_customization_font_summary">Установить стиль системного шрифта</string>
+    <!-- [CHAR_LIMIT=NONE] Настройки разработчика: заголовок настройки, которая включает наложения для настройки формы адаптивных иконок (например, иконки на главном экране и в быстрых настройках). -->
+    <string name="theme_customization_icon_shape_title">Форма иконок</string>
+    <string name="theme_customization_icon_shape_summary">Установить стиль формы системных иконок</string>
+    <!-- [CHAR_LIMIT=NONE] Настройки разработчика: заголовок настройки, которая включает наложения для настройки системного набора иконок. -->
+    <string name="theme_customization_icon_pack_title">Пакет иконок</string>
+    <string name="theme_customization_icon_pack_summary">Установить пользовательский стиль пакета иконок</string>
+
+    <!-- Уведомления Island -->
+    <string name="island_notification_title">Уведомления Island</string>
+    <string name="island_notification_summary">Отображать уведомления в стиле Dynamic Island</string>
+    <string name="island_notification_now_playing_title">Сейчас играет</string>
+    <string name="island_notification_now_playing_summary">Отображать текущую песню в стиле Dynamic Island</string>
+    <string name="island_notification_footer_text">
+        Функция уведомлений Island, вдохновленная Dynamic Island на iOS, превращает уведомления Android в компактный и удобный инструмент уведомлений.\n\nIsland Quick Access Controls включает следующие функции:\n1. Нажмите на уведомление Island для быстрого ответа на звонки.\n2. Удерживайте уведомление Island, чтобы отклонить звонки.\n3. Удерживайте уведомление Island, чтобы развернуть предварительный просмотр уведомления Island.
+    </string>
+
+</resources>

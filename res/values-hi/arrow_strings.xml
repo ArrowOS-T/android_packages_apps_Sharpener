@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2024 ArrowOS-T
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Extension Title -->
+    <string name="sharpener_title">शार्पनर</string>
+
+    <!-- Categories -->
+    <string name="sharpener_about_title">हमारे बारे में</string>
+    <string name="sharpener_about_summary">इस OS के बारे में सब कुछ यहाँ पाया जा सकता है।</string>
+    <string name="sharpener_lockscreen_title">लॉक स्क्रीन</string>
+    <string name="sharpener_lockscreen_summary">अपने फोन को चालू करें और अपनी लॉक स्क्रीन क्षेत्र को सेट करें</string>
+    <string name="sharpener_themes_title">थीम</string>
+    <string name="sharpener_themes_summary">कस्टमाइजेशन के स्थान में आपका स्वागत है।</string>
+    <string name="sharpener_misc_title">अन्य</string>
+    <string name="sharpener_misc_summary">आपके फोन के कार्यक्षमता को बढ़ाने वाली विभिन्न सुविधाएँ</string>
+    <string name="sharpener_quicksettings_title">त्वरित सेटिंग्स</string>
+    <string name="sharpener_quicksettings_summary">अपनी सर्वश्रेष्ठ त्वरित सेटिंग्स क्षेत्र बनाएं</string>
+    <string name="sharpener_statusbar_title">स्थिति पट्टी</string>
+    <string name="sharpener_statusbar_summary">स्थिति पट्टी क्षेत्र को सेट या कस्टमाइज़ करें</string>
+    <string name="sharpener_notifications_title">सूचनाएँ</string>
+    <string name="sharpener_notifications_summary">सूचनाओं को प्रबंधित करने के लिए कुछ सुविधाएँ हैं</string>
+    <string name="sharpener_gestures_title">जेस्चर</string>
+    <string name="sharpener_gestures_summary">जेस्चर के बारे में सब कुछ यहाँ सेट करें!</string>
+    <string name="sharpener_buttons_title">बटन</string>
+    <string name="sharpener_buttons_summary">अपने बटन सेटिंग्स को यहाँ लाएँ।</string>
+
+    <!-- ROM Information -->
+    <string name="about_info">ArrowOS एक AOSP आधारित परियोजना है जो सब कुछ सरल, साफ और व्यवस्थित रखने के लक्ष्य के साथ शुरू हुई। हम दीर्घकालिक उपयोग के लिए उपयोगी सुविधाएँ जोड़ते हैं, साथ ही सुगम प्रदर्शन और लंबे बैटरी जीवन का लक्ष्य रखते हैं।</string>
+    <string name="about_fork_info">इस परियोजना के लिए, स्रोत प्रबंधक ArrowOS को सुरक्षा पैच के साथ अपडेट रखता है और दीर्घकालिक उपयोग के लिए कुछ उपयोगी सुविधाएँ जोड़ता है। यह परियोजना केवल व्यक्तिगत उपयोग के लिए है और अन्य डेवलपर्स भी अपने-अपने उपकरणों के लिए निर्माण कर सकते हैं।</string>
+    <string name="rom_info_title">ArrowOS के बारे में जानकारी</string>
+    <string name="about_website_title">वेबसाइट</string>
+    <string name="about_website_summary">ArrowOS की वेबसाइट पर जाने में संकोच न करें</string>
+    <string name="about_github_title" translatable="false">ArrowOS GitHub</string>
+    <string name="about_github_summary">ArrowOS का आधिकारिक GitHub देखें</string>
+    <string name="about_fork_github_title" translatable="false">ArrowOS-Fork GitHub</string>
+    <string name="about_fork_github_summary">ArrowOS-Fork का GitHub देखें</string>
+    <string name="about_source_manager_title" translatable="false">स्रोत प्रबंधक</string>
+    <string name="about_source_manager_summary">Iverz Asterix</string>
+
+    <!-- General strings -->
+    <string name="ok">ठीक है</string>
+    <string name="reset">रीसेट करें</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="save">सहेजें</string>
+    <string name="none_string">कोई नहीं</string>
+
+    <!-- Power menu on secure lockscreen -->
+    <string name="lockscreen_enable_power_menu_title">लॉक स्क्रीन पर पावर मेन्यू</string>
+    <string name="lockscreen_enable_power_menu_summary">सुरक्षित लॉक स्क्रीन पर पावर मेन्यू तक पहुंच की अनुमति दें</string>
+
+    <!-- QS in Lockscreen -->
+    <string name="disable_qs_title">सुरक्षित लॉक स्क्रीन पर QS छिपाएँ</string>
+    <string name="disable_qs_summary">यदि उपकरण लॉक है तो QS छिपाना। अधिसूचना छाया को बंद नहीं करता</string>
+
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">4G आइकन दिखाएँ</string>
+    <string name="show_fourg_icon_summary">LTE के बजाय सिग्नल आइकन में 4G आइकन दिखाएँ</string>
+
+    <!-- Media art -->
+    <string name="lockscreen_media_art_options_title">मीडिया कवर कला</string>
+    <string name="media_art_title">मीडिया कवर कला</string>
+    <string name="media_art_summary">उपलब्ध होने पर मीडिया कवर कला दिखाएँ</string>
+
+    <!-- Lock screen cover art -->
+    <string name="lockscreen_media_blur_title">मीडिया कला का धुंधलापन स्तर</string>
+
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_show_brightness_slider_title">चमक स्लाइडर</string>
+    <string name="qs_show_brightness_slider_never">कभी नहीं दिखाएँ</string>
+    <string name="qs_show_brightness_slider_expanded">विस्तारित होने पर दिखाएँ</string>
+    <string name="qs_show_brightness_slider_always">हमेशा दिखाएँ</string>
+    <string name="qs_show_brightness_slider_not_expanded">विस्तारित न होने पर दिखाएँ</string>
+    <string name="qs_brightness_slider_position_title">स्थिति</string>
+    <string name="qs_brightness_slider_position_top">ऊपर</string>
+    <string name="qs_brightness_slider_position_bottom">नीचे</string>
+
+    <!-- Quick Settings brightness icon -->
+    <string name="qs_show_auto_brightness_title">स्वचालित चमक आइकन</string>
+    <string name="qs_show_auto_brightness_summary">स्लाइडर के पास अनुकूल चमक के लिए बटन दिखाएँ</string>
+
+    <!-- Max visible notification icons -->
+    <string name="max_visible_notification_icons_title">सूचना आइकनों की संख्या</string>
+    <string name="max_visible_notification_icons_summary">स्थिति पट्टी में अधिकतम सूचना आइकनों की संख्या सेट करें</string>
+
+    <!-- Fingerprint authentication vibration -->
+    <string name="fingerprint_category">फिंगरप्रिंट</string>
+    <string name="fprint_error_vib_title">फिंगरप्रिंट प्रमाणीकरण त्रुटि वाइब्रेशन</string>
+    <string name="fprint_error_vib_summary">फिंगरप्रिंट प्रमाणीकरण में त्रुटि होने पर वाइब्रेट करें</string>
+    <string name="fprint_success_vib_title">फिंगरप्रिंट प्रमाणीकरण सफल वाइब्रेशन</string>
+    <string name="fprint_success_vib_summary">फिंगरप्रिंट प्रमाणीकरण सफल होने पर वाइब्रेट करें</string>
+
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">लॉक स्क्रीन पर बैटरी चार्जिंग जानकारी</string>
+    <string name="lockscreen_battery_info_summary">चार्जिंग के दौरान लॉक स्क्रीन पर बैटरी चार्जिंग और तापमान की जानकारी दिखाएँ</string>
+
+    <!-- Android P animation style -->
+    <string name="pie_animation_style_title">Android P एनीमेशन शैली</string>
+    <string name="pie_animation_style_summary">"डिफ़ॉल्ट" Android Pie एनीमेशन सक्रिय करें</string>
+
+    <!-- Per-app spoofing -->
+    <string name="gameprops_title">ऐप-विशिष्ट स्पूफिंग सक्षम करें</string>
+    <string name="gameprops_summary">PixelProps के भीतर ऐप-विशिष्ट स्पूफिंग विकल्प सक्षम करें</string>
+    <string name="gameprops_load_json_title">ऐप-विशिष्ट JSON प्रॉप्स फ़ाइल चुनें</string>
+    <string name="gameprops_load_json_summary">गेम स्पूफिंग के लिए उपयोग की जाने वाली ऐप-विशिष्ट JSON फ़ाइल चुनें</string>
+
+    <string name="spoof_option_disabled">PixelProps स्पूफिंग को अक्षम करना वर्तमान उपकरण द्वारा समर्थित नहीं है</string>
+
+    <!-- Unlimited google photos storage -->
+    <string name="use_photos_spoof_title">असीमित गूगल फ़ोटो संग्रहण</string>
+    <string name="use_photos_spoof_summary">गूगल फ़ोटो पर असीमित संग्रहण के लिए उपकरण को गूगल पिक्सेल के रूप में स्पूफ करें</string>
+
+    <!-- Status bar padding -->
+    <string name="statusbar_padding">स्थिति पट्टी का पैडिंग</string>
+    <string name="statusbar_top_padding">ऊपर</string>
+    <string name="statusbar_left_padding">बाईं ओर</string>
+    <string name="statusbar_right_padding">दाईं ओर</string>
+
+    <!-- QS Widgets -->
+    <string name="qs_widgets_enabled_title">क्विक सेटिंग्स विजेट</string>
+    <string name="qs_widgets_enabled_summary">तेज पहुंच के लिए क्विक सेटिंग्स विजेट दिखाएँ</string>
+
+    <!-- GMS Spoof -->
+    <string name="gms_spoof_title">GMS स्पूफिंग सक्षम करें</string>
+    <string name="gms_spoof_summary">Google Play एटेस्टेशन को पार करने के लिए अपने डिवाइस को स्पूफ करें</string>
+
+    <!-- Enable all props -->
+    <string name="all_props_title">स्पूफ विकल्प सक्षम करें</string>
+    <string name="all_props_summary">PixelProps में सभी स्पूफ विकल्पों को सक्षम करें</string>
+
+    <!-- Spoof google app props -->
+    <string name="google_spoof_title">गूगल ऐप स्पूफ करें</string>
+    <string name="google_spoof_summary">कुछ गूगल ऐप्स को Pixel 8 Pro के रूप में स्पूफ करें</string>
+    <string name="google_spoof_option_disabled">गूगल ऐप स्पूफिंग सक्षम करना वर्तमान डिवाइस के लिए आवश्यक नहीं है</string>
+
+    <!-- PIF spoofing -->
+    <string name="pif_spoofing_title">PIF JSON फ़ाइल चुनें</string>
+    <string name="pif_spoofing_summary">Play integrity के लिए स्पूफिंग के लिए उपयोग की जाने वाली PIF JSON फ़ाइल चुनें</string>
+
+    <!-- Play Integrity Fix JSON Update -->
+    <string name="toast_spoofing_success">pif.json डाउनलोड सफल। Play integrity के लिए %1$s के रूप में स्पूफ कर रहा है।</string>
+    <string name="toast_spoofing_failure">प्रॉपर्टीज़ को स्पूफ करने में विफल रहा।</string>
+    <string name="update_pif_json_title">Play Integrity Fix अपडेट करें</string>
+    <string name="update_pif_json_summary">PIF स्पूफिंग डिवाइस को अपडेट करें, इंटरनेट कनेक्शन की आवश्यकता है।</string>
+    <string name="show_pif_properties_title">Play Integrity Fix प्रॉपर्टीज़</string>
+    <string name="show_pif_properties_summary">वर्तमान में सेट सभी PIF प्रॉपर्टीज़ दिखाएँ</string>
+    <string name="error_loading_properties">PIF प्रॉपर्टीज़ लोड करने में त्रुटि</string>
+
+    <!-- स्टेटसबार रंगीन आइकॉन -->
+    <string name="statusbar_colored_icons_title">रंगीन आइकॉन</string>
+    <string name="statusbar_colored_icons_summary">स्टेटसबार में सूचनाओं के लिए सही ऐप आइकॉन का उपयोग करें</string>
+
+    <!-- स्टेटसबार घड़ी की पृष्ठभूमि चिप -->
+    <string name="statusbar_clock_chip_title">पृष्ठभूमि चिप</string>
+    <string name="statusbar_clock_chip_summary">घड़ी के पीछे उभरी हुई चिप दिखाएं</string>
+
+    <!-- Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">थीम कस्टमाइजेशन</string>
+    <!-- Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">हेडलाइन / बॉडी फ़ॉन्ट</string>
+    <string name="theme_customization_font_summary">सिस्टम फ़ॉन्ट शैली सेट करें</string>
+    <!-- Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+    <string name="theme_customization_icon_shape_title">आइकन का आकार</string>
+    <string name="theme_customization_icon_shape_summary">सिस्टम आइकन के आकार को सेट करें</string>
+    <!-- Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
+    <string name="theme_customization_icon_pack_title">आइकन पैक</string>
+    <string name="theme_customization_icon_pack_summary">कस्टम आइकन पैक शैली सेट करें</string>
+
+    <!-- Island Notification -->
+    <string name="island_notification_title">आइलेट नोटिफिकेशन</string>
+    <string name="island_notification_summary">डायनामिक आइलैंड के शैली में हेड्स-अप नोटिफिकेशन दिखाएँ</string>
+    <string name="island_notification_now_playing_title">अब खेल रहा है</string>
+    <string name="island_notification_now_playing_summary">डायनामिक आइलैंड के शैली में खेल रही गाने को दिखाएँ</string>
+    <string name="island_notification_footer_text">
+        आइलैंड नोटिफिकेशन फीचर, iOS के डायनामिक आइलैंड से प्रेरित, Android के हेड्स-अप नोटिफिकेशन को संक्षिप्त और जल्दी पहुंच योग्य नोटिफिकेशन उपयोगिता में बदल देता है।\n\nआइसलैंड त्वरित पहुंच फीचर में शामिल हैं:\n1. फोन कॉल का त्वरित उत्तर देने के लिए आइलैंड नोटिफिकेशन पर टैप करें। \n2. फोन कॉल को अस्वीकार करने के लिए आइलैंड नोटिफिकेशन पर लंबे समय तक प्रेस करें। \n3. आइलैंड नोटिफिकेशन का पूर्वावलोकन विस्तारित करने के लिए लंबे समय तक प्रेस करें।
+    </string>
+
+</resources>
