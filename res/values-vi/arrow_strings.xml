@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2024 ArrowOS-T
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Extension Title -->
+    <string name="sharpener_title">Sharpener</string>
+
+    <!-- Categories -->
+    <string name="sharpener_about_title">Giới thiệu về chúng tôi</string>
+    <string name="sharpener_about_summary">Tất cả các thông tin về OS đều ngay trước mặt bạn</string>
+    <string name="sharpener_lockscreen_title">Màn hình khóa</string>
+    <string name="sharpener_lockscreen_summary">Kích hoạt màn hình khóa và cài đặt chúng</string>
+    <string name="sharpener_themes_title">Themes</string>
+    <string name="sharpener_themes_summary">Chào mừng tới ngôi nhà mới!</string>
+    <string name="sharpener_misc_title">Misc</string>
+    <string name="sharpener_misc_summary">Nhiều tính năng khác đang chờ đón bạn</string>
+    <string name="sharpener_quicksettings_title"> QS - Nhịp điệu mở rộng</string>
+    <string name="sharpener_quicksettings_summary">Kiến tạo nhịp điệu ngay trong tầm mắt</string>
+    <string name="sharpener_statusbar_title">Thanh Trạng thái</string>
+    <string name="sharpener_statusbar_summary">Điều chỉnh thanh trạng thái</string>
+    <string name="sharpener_notifications_title">Thông báo</string>
+    <string name="sharpener_notifications_summary">Quản lý thông báo</string>
+    <string name="sharpener_gestures_title">Cử chỉ</string>
+    <string name="sharpener_gestures_summary">Mọi thứ về cử chỉ đều hiện ra tại đây!</string>
+    <string name="sharpener_buttons_title">Căn chỉnh vuốt chạm</string>
+    <string name="sharpener_buttons_summary">Điều bạn mong ước đều ở đây!</string>
+
+    <!-- ROM Information -->
+    <string name="about_info">ArrowOS là một nhánh khác của dự án AOSP, bắt đầu với mọi thứ đơn giản và trơn tru. Phục vụ bạn và giữ bạn lâu nhất luôn là phương châm hàng đầu, chính vì vậy chúng tôi mong rằng bạn luôn mỉm cười với những điều mới khi những bản cập nhật được phát sóng!</string>
+    <string name="about_fork_inf">Chúng tôi sẽ cập nhật vá bảo mật và viên thuốc hữu ích từ ArrowOS. Điều này chỉ nhằm mục đích cá nhân các nhà phát triển có thể sử dụng theo ý thích của họ</string>
+    <string name="rom_info_title">Thông tin về ArrowOS</string>
+    <string name="about_website_title">Website</string>
+    <string name="about_website_summary">Hãy thư giãn khi ghé thăm website ArrowOS</string>
+    <string name="about_github_title" translatable="false">ArrowOS GitHub</string>
+    <string name="about_github_summary"> Kiểm tra nơi khởi nguồn của điều kỳ diệu tại ArrowOS GitHub</string>
+    <string name="about_fork_github_title" translatable="false">ArrowOS-Fork GitHub</string>
+    <string name="about_fork_github_summary">Kiểm tra gia vi yêu thương tại ArrowOS-Fork GitHub</string>
+    <string name="about_source_manager_title" translatable="false">Source Manager</string>
+    <string name="about_source_manager_summary">Iverz Asterix</string>
+
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+    <string name="cancel">Thoát</string>
+    <string name="save">Lưu</string>
+    <string name="none_string">Không tồn tại</string>
+
+    <!-- Power menu on secure lockscreen -->
+    <string name="lockscreen_enable_power_menu_title">Tắt Nguồn ở màn hình khóa</string>
+    <string name="lockscreen_enable_power_menu_summary">Cho phép sử dụng thiết lập nâng cao ở màn hình khóa</string>
+
+    <!-- QS in Lockscreen -->
+    <string name="disable_qs_title">Ẩn QS khi thiết bị khóa</string>
+    <string name="disable_qs_summary"> Giấu QS khi thiết bị khóa, không tắt thông báo</string>
+
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">Hiện thị 4G</string>
+    <string name="show_fourg_icon_summary">Hiển thị tín hiệu 4G thay vì LTE</string>
+
+    <!-- Media art -->
+    <string name="lockscreen_media_art_options_title">Hiển thị đa phương tiện</string>
+    <string name="media_art_title">Hiển thị đa phương tiện</string>
+    <string name="media_art_summary">Kích hoạt đa phương tiện hoạt động</string>
+
+    <!-- Lock screen cover art -->
+    <string name="lockscreen_media_blur_title">Đổi màu nền phương tiện</string>
+
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_show_brightness_slider_title">Thanh trượt độ sáng</string>
+    <string name="qs_show_brightness_slider_never">Không sử dụng</string>
+    <string name="qs_show_brightness_slider_expanded">Hiển thị tăng cường</string>
+    <string name="qs_show_brightness_slider_always">Luôn sử dụng</string>
+    <string name="qs_show_brightness_slider_not_expanded">Show when not expanded</string>
+    <string name="qs_brightness_slider_position_title">Position</string>
+    <string name="qs_brightness_slider_position_top">Top</string>
+    <string name="qs_brightness_slider_position_bottom">Bottom</string>
+
+    <!-- Quick Settings brightness icon -->
+    <string name="qs_show_auto_brightness_title">Độ sáng tự động</string>
+    <string name="qs_show_auto_brightness_summary">Hiển thị nút chuyển đổi độ sáng thích ứng gần thanh trượt</string>
+
+    <!-- Max visible notification icons -->
+    <string name="max_visible_notification_icons_title">Mức độ biểu tượng thông báo</string>
+    <string name="max_visible_notification_icons_summary">Hiển thị tối đa trên thanh trạng thái</string>
+
+    <!-- Fingerprint authentication vibration -->
+    <string name="fingerprint_category">Vân tay</string>
+    <string name="fprint_error_vib_title">Vân tay không hợp lệ vibration</string>
+    <string name="fprint_error_vib_summary">Rung khi vân tay không thành công</string>
+    <string name="fprint_success_vib_title">Rung xác thực vân tay</string>
+    <string name="fprint_success_vib_summary">Rung khi vân tay hoàn thành</string>
+
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Thông tin về sạc</string>
+    <string name="lockscreen_battery_info_summary">Hiển thị nhiệt độ và dòng điện trên màn hình khóa</string>
+
+    <!-- Android P animation style -->
+    <string name="pie_animation_style_title">Android P animation</string>
+    <string name="pie_animation_style_summary">Enable Android Pie \"Default\" animations</string>
+
+    <!-- Per-app spoofing -->
+    <string name="gameprops_title">Enable Per-app spoofing</string>
+    <string name="gameprops_summary">Enables per-app spoofing options within the PixelProps</string>
+    <string name="gameprops_load_json_title">Select Per-app Props JSON File</string>
+    <string name="gameprops_load_json_summary">Pick Per-app JSON file to be used for spoofing games</string>
+
+    <string name="spoof_option_disabled">Disabling PixelProps spoofing is not supported by current device</string>
+
+    <!-- Unlimited google photos storage -->
+    <string name="use_photos_spoof_title">Unlimited Photos storage</string>
+    <string name="use_photos_spoof_summary">Spoof your device as Pixel XL for Google Photos app only to provide unlimited storage for backup</string>
+
+    <!-- Status bar padding -->
+    <string name="statusbar_padding">Statusbar Padding</string>
+    <string name="statusbar_top_padding">Top</string>
+    <string name="statusbar_left_padding">Left</string>
+    <string name="statusbar_right_padding">Right</string>
+
+    <!-- Privacy Indicator -->
+    <string name="mic_camera_privacy_indicator_title">Chỉ báo quyền riêng tư của micrô và camera</string>
+    <string name="mic_camera_privacy_indicator_summary">Hiển thị cảnh báo khi sử dụng micrô và camera</string>
+    <string name="location_privacy_indicator_title">Chỉ báo riêng tư vị trí</string>
+    <string name="location_privacy_indicator_summary">Hiển thị cảnh báo khi sử dụng vị trí</string>
+    <string name="projection_privacy_indicator_title">Quyền riêng tư đa phương tiện</string>
+    <string name="projection_privacy_indicator_summary">Show indicator when device screen is projected</string>
+
+    <!-- Less boring heads up -->
+    <string name="less_boring_heads_up_title">Saner heads up</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for calls, messages, alarms, reminders and priority conversations</string>
+
+    <!-- Heads up -->
+    <string name="heads_up_title">Heads up</string>
+    <string name="heads_up_summary">Show select notifications as a banner across the top of the screen</string>
+
+    <!-- Ignore window secure -->
+    <string name="ignore_window_secure_title">Ignore window secure flags</string>
+    <string name="ignore_window_secure_summary">Remove screenshot and screenrecord limits for all apps. This can be convenient in some cases but may lead to privacy leaks.</string>
+
+     <!-- Black theme -->
+    <string name="system_black_theme_title">Đen tuyền</string>
+    <string name="system_black_theme_summary">Kích hoạt nền đen vĩnh viễn</string>
+
+    <!-- QS footer data usage -->
+    <string name="qs_show_data_usage_title">Hiển thị dữ liệu</string>
+    <string name="qs_show_data_usage_summary">Hiển thị dữ liệu trên QS</string>
+
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">Các mục thanh trạng thái</string>
+    <string name="icon_manager_summary">Điều chỉnh hiển thị các biểu tượng trên thanh trạng thái</string>
+
+    <!-- Network traffic -->
+    <string name="network_traffic_title">Đo tốc độ mạng</string>
+    <string name="network_traffic_summary">Bật và tắt đo tốc độ mạng trên thanh trạng thái</string>
+    <string name="network_traffic_state_title">Enable "Bật đo tốc độ mạng"</string>
+    <string name="network_options_title">Tuỳ chọn nâng cao</string>
+    <string name="network_traffic_autohide_title">Ẩn tốc độ mạng khi không sử dụng</string>
+    <string name="network_traffic_autohide_summary">Tự động ẩn khi tốc độ dưới 1 KB/s</string>
+
+    <!-- Annoying Notifications -->
+    <string name="notification_sound_vib_screen_on_title">Thông báo làm phiền</string>
+    <string name="notification_sound_vib_screen_on_summary">Phát âm thanh và rung để thông báo khi thiết bị bật </string>
+
+    <!-- Volume rocker wake -->
+    <string name="volume_rocker_wake_title">Volume wake</string>
+    <string name="volume_rocker_wake_summary">Wake your device up by pressing the volume keys</string>
+
+    <!-- GMS Spoof -->
+    <string name="gms_spoof_title">Enable GMS spoof</string>
+    <string name="gms_spoof_summary">Spoof your device to pass Google Play Attestation</string>
+
+    <!-- Enable all props -->
+    <string name="all_props_title">Enable spoof options</string>
+    <string name="all_props_summary">Enables all the spoof options within the PixelProps</string>
+
+    <!-- Spoof google app props -->
+    <string name="google_spoof_title">Spoof google apps</string>
+    <string name="google_spoof_summary">Spoof a few google apps to Pixel 8 Pro</string>
+    <string name="google_spoof_option_disabled">Enabling Google apps spoofing is not needed by current device</string>
+
+    <!-- PIF spoofing -->
+    <string name="pif_spoofing_title">Select PIF JSON File</string>
+    <string name="pif_spoofing_summary">Pick PIF JSON file to be used for spoofing play integrity</string>
+
+    <!-- Play Integrit Fix JSON Update -->
+    <string name="toast_spoofing_success">Successfully downloaded pif.json. Spoofing as %1$s for play integrity.</string>
+    <string name="toast_spoofing_failure">Failed to spoof properties.</string>
+    <string name="update_pif_json_title">Update Play Integrity Fix</string>
+    <string name="update_pif_json_summary">Update PIF spoofing device, requires internet connection.</string>
+    <string name="show_pif_properties_title">Play Integrity Fix properties</string>
+    <string name="show_pif_properties_summary">Show all currently set PIF properties</string>
+    <string name="error_loading_properties">Error loading PIF properties</string>
+
+</resources>
