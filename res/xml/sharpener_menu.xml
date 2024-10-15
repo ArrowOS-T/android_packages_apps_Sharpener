@@ -24,8 +24,7 @@
             android:title="@string/sharpener_about_title"
             android:summary="@string/sharpener_about_summary"
             android:fragment="com.arrow.support.fragments.AboutSettings"
-            settings:layout="@layout/card_interface_single"
-            android:icon="@drawable/ic_sharpener_about"/>
+            android:icon="@drawable/ic_settings_about"/>
 
         <!-- Themes -->
         <Preference
@@ -33,8 +32,7 @@
             android:title="@string/sharpener_themes_title"
             android:summary="@string/sharpener_themes_summary"
             android:fragment="com.arrow.support.fragments.ThemesSettings"
-            settings:layout="@layout/card_interface_top"
-            android:icon="@drawable/ic_sharpener_themes"/>    
+            android:icon="@drawable/ic_settings_themes"/>    
 
         <!-- Status Bar -->
         <Preference
@@ -42,8 +40,7 @@
             android:title="@string/sharpener_statusbar_title"
             android:summary="@string/sharpener_statusbar_summary"
             android:fragment="com.arrow.support.fragments.StatusBarSettings"
-            settings:layout="@layout/card_interface_middle"
-            android:icon="@drawable/ic_sharpener_statusbar"/>
+            android:icon="@drawable/ic_settings_statusbar" />
 
         <!-- Quick Settings -->
         <Preference
@@ -51,8 +48,7 @@
             android:title="@string/sharpener_quicksettings_title"
             android:summary="@string/sharpener_quicksettings_summary"
             android:fragment="com.arrow.support.fragments.QuickSettings"
-            settings:layout="@layout/card_interface_middle"
-            android:icon="@drawable/ic_sharpener_quicksettings"/>
+            android:icon="@drawable/ic_settings_quicksettings" />
 
         <!-- Notifications -->
         <Preference
@@ -60,8 +56,7 @@
             android:title="@string/sharpener_notifications_title"
             android:summary="@string/sharpener_notifications_summary"
             android:fragment="com.arrow.support.fragments.NotificationSettings"
-            settings:layout="@layout/card_interface_middle"
-            android:icon="@drawable/ic_sharpener_notifications"/>
+            android:icon="@drawable/ic_settings_notifications" />
 
         <!-- Lockscreen -->
         <Preference
@@ -69,8 +64,7 @@
             android:title="@string/sharpener_lockscreen_title"
             android:summary="@string/sharpener_lockscreen_summary"
             android:fragment="com.arrow.support.fragments.LockScreenSettings"
-            settings:layout="@layout/card_interface_middle"
-            android:icon="@drawable/ic_sharpener_lockscreen"/>        
+            android:icon="@drawable/ic_settings_lockscreens" />        
 
         <!-- Gestures -->
         <Preference
@@ -79,8 +73,7 @@
             android:summary="@string/sharpener_gestures_summary" 
             android:fragment="com.android.settings.gestures.GestureSettings"
             settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"
-            settings:layout="@layout/card_interface_middle"
-            android:icon="@drawable/ic_sharpener_gestures"/>
+            android:icon="@drawable/ic_settings_gestures" />
 
         <!-- Buttons -->
         <Preference
@@ -88,8 +81,7 @@
             android:title="@string/sharpener_buttons_title"
             android:summary="@string/sharpener_buttons_summary" 
             android:fragment="com.arrow.support.fragments.ButtonsSettings"
-            settings:layout="@layout/card_interface_middle"
-            android:icon="@drawable/ic_sharpener_buttons"/>
+            android:icon="@drawable/ic_settings_buttons"/>
 
         <!-- Misc -->
         <Preference
@@ -97,7 +89,6 @@
             android:title="@string/sharpener_misc_title"
             android:summary="@string/sharpener_misc_summary" 
             android:fragment="com.arrow.support.fragments.MiscSettings"
-            settings:layout="@layout/card_interface_bottom"
-            android:icon="@drawable/ic_sharpener_misc"/>            
+            android:icon="@drawable/ic_settings_miscs" />            
 
 </PreferenceScreen>
