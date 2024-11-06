@@ -133,30 +133,13 @@
      <string name="qs_widgets_enabled_title">Widgets de ajustes rápidos</string>
      <string name="qs_widgets_enabled_summary">Mostrar widgets de ajustes rápidos para un acceso rápido</string>
 
-     <!-- Simulación de GMS -->
-     <string name="gms_spoof_title">Habilitar la simulación de GMS</string>
-     <string name="gms_spoof_summary">Simular tu dispositivo para pasar la verificación de Google Play</string>
-
      <!-- Habilitar todas las propiedades -->
-     <string name="all_props_title">Habilitar opciones de simulación</string>
+     <string name="all_props_title">Habilitar Pixel Props</string>
      <string name="all_props_summary">Habilitar todas las opciones de simulación dentro de PixelProps</string>
 
      <!-- Simulación de aplicaciones de Google -->
      <string name="google_spoof_title">Simular aplicaciones de Google</string>
-     <string name="google_spoof_summary">Simular algunas aplicaciones de Google como Pixel 8 Pro</string>
+     <string name="google_spoof_summary">Simular algunas aplicaciones de Google como Pixel 9 Pro</string>
      <string name="google_spoof_option_disabled">No es necesario habilitar la simulación de aplicaciones de Google en este dispositivo</string>
-
-     <!-- Simulación de PIF -->
-     <string name="pif_spoofing_title">Seleccionar archivo JSON de PIF</string>
-     <string name="pif_spoofing_summary">Seleccionar archivo JSON de PIF para utilizar en la simulación de la integridad de Play</string>
-
-     <!-- Actualización del archivo JSON de Play Integrity Fix -->
-     <string name="toast_spoofing_success">Descarga de pif.json exitosa. Simulando como %1$s para la integridad de Play.</string>
-     <string name="toast_spoofing_failure">Error al simular las propiedades.</string>
-     <string name="update_pif_json_title">Actualizar Play Integrity Fix</string>
-     <string name="update_pif_json_summary">Actualizar el dispositivo de simulación de PIF, requiere conexión a internet.</string>
-     <string name="show_pif_properties_title">Propiedades de Play Integrity Fix</string>
-     <string name="show_pif_properties_summary">Mostrar todas las propiedades de PIF configuradas actualmente</string>
-     <string name="error_loading_properties">Error al cargar las propiedades de PIF</string>
 
 </resources>

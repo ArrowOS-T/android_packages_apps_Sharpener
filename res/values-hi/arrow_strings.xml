@@ -133,30 +133,13 @@
     <string name="qs_widgets_enabled_title">क्विक सेटिंग्स विजेट</string>
     <string name="qs_widgets_enabled_summary">तेज पहुंच के लिए क्विक सेटिंग्स विजेट दिखाएँ</string>
 
-    <!-- GMS Spoof -->
-    <string name="gms_spoof_title">GMS स्पूफिंग सक्षम करें</string>
-    <string name="gms_spoof_summary">Google Play एटेस्टेशन को पार करने के लिए अपने डिवाइस को स्पूफ करें</string>
-
     <!-- Enable all props -->
-    <string name="all_props_title">स्पूफ विकल्प सक्षम करें</string>
+    <string name="all_props_title">पिक्सेल प्रॉप्स सक्षम करें</string>
     <string name="all_props_summary">PixelProps में सभी स्पूफ विकल्पों को सक्षम करें</string>
 
     <!-- Spoof google app props -->
     <string name="google_spoof_title">गूगल ऐप स्पूफ करें</string>
-    <string name="google_spoof_summary">कुछ गूगल ऐप्स को Pixel 8 Pro के रूप में स्पूफ करें</string>
+    <string name="google_spoof_summary">कुछ गूगल ऐप्स को Pixel 9 Pro के रूप में स्पूफ करें</string>
     <string name="google_spoof_option_disabled">गूगल ऐप स्पूफिंग सक्षम करना वर्तमान डिवाइस के लिए आवश्यक नहीं है</string>
-
-    <!-- PIF spoofing -->
-    <string name="pif_spoofing_title">PIF JSON फ़ाइल चुनें</string>
-    <string name="pif_spoofing_summary">Play integrity के लिए स्पूफिंग के लिए उपयोग की जाने वाली PIF JSON फ़ाइल चुनें</string>
-
-    <!-- Play Integrity Fix JSON Update -->
-    <string name="toast_spoofing_success">pif.json डाउनलोड सफल। Play integrity के लिए %1$s के रूप में स्पूफ कर रहा है।</string>
-    <string name="toast_spoofing_failure">प्रॉपर्टीज़ को स्पूफ करने में विफल रहा।</string>
-    <string name="update_pif_json_title">Play Integrity Fix अपडेट करें</string>
-    <string name="update_pif_json_summary">PIF स्पूफिंग डिवाइस को अपडेट करें, इंटरनेट कनेक्शन की आवश्यकता है।</string>
-    <string name="show_pif_properties_title">Play Integrity Fix प्रॉपर्टीज़</string>
-    <string name="show_pif_properties_summary">वर्तमान में सेट सभी PIF प्रॉपर्टीज़ दिखाएँ</string>
-    <string name="error_loading_properties">PIF प्रॉपर्टीज़ लोड करने में त्रुटि</string>
 
 </resources>

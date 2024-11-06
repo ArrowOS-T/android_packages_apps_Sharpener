@@ -52,25 +52,19 @@ import java.util.List;
 public class SpoofSettings extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
     public static final String TAG = "SpoofSettings";
-    private static final String SYS_GMS_SPOOF = "persist.sys.pixelprops.gms";
     private static final String SYS_GOOGLE_SPOOF = "persist.sys.pixelprops.google";
-    private static final String SYS_PROP_OPTIONS = "persist.sys.pixelprops.all";
+    private static final String SYS_PIXEL_PROPS = "persist.sys.pixelprops.all";
     private static final String SYS_GAMEPROP_ENABLED = "persist.sys.gameprops.enabled";
     private static final String SYS_GPHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
-    private static final String KEY_PIF_JSON_FILE_PREFERENCE = "pif_json_file_preference";
     private static final String KEY_GAME_PROPS_JSON_FILE_PREFERENCE = "game_props_json_file_preference";
-    private static final String KEY_UPDATE_JSON_BUTTON = "update_pif_json";
 
     private boolean isPixelDevice;
 
-    private Preference mGmsSpoof;
     private Preference mGoogleSpoof;
     private Preference mGphotosSpoof;
-    private Preference mPropOptions;
-    private Preference mPifJsonFilePreference;
+    private Preference mPixelProps;
     private Preference mGamePropsJsonFilePreference;
     private Preference mGamePropsSpoof;
-    private Preference mUpdateJsonButton;
 
     private Handler mHandler;
 
@@ -82,18 +76,14 @@ public class SpoofSettings extends SettingsPreferenceFragment implements Prefere
 
         mGamePropsSpoof = findPreference(SYS_GAMEPROP_ENABLED);
         mGphotosSpoof = findPreference(SYS_GPHOTOS_SPOOF);
-        mGmsSpoof = findPreference(SYS_GMS_SPOOF);
         mGoogleSpoof = findPreference(SYS_GOOGLE_SPOOF);
-        mPropOptions = findPreference(SYS_PROP_OPTIONS);
-        mPifJsonFilePreference = findPreference(KEY_PIF_JSON_FILE_PREFERENCE);
+        mPixelProps = findPreference(SYS_PIXEL_PROPS);
         mGamePropsJsonFilePreference = findPreference(KEY_GAME_PROPS_JSON_FILE_PREFERENCE);
-        mUpdateJsonButton = findPreference(KEY_UPDATE_JSON_BUTTON);
 
         String model = SystemProperties.get("ro.product.model");
         isPixelDevice = SystemProperties.get("ro.soc.manufacturer").equals("Google");
 
-        mGmsSpoof.setDependency(SYS_PROP_OPTIONS);
-        mGphotosSpoof.setDependency(SYS_PROP_OPTIONS);
+        mGphotosSpoof.setDependency(SYS_PIXEL_PROPS);
         
         if (isPixelDevice) {
             mGoogleSpoof.setDefaultValue(false);
@@ -103,34 +93,15 @@ public class SpoofSettings extends SettingsPreferenceFragment implements Prefere
             }
         }
 
-        mGmsSpoof.setOnPreferenceChangeListener(this);
-        mPropOptions.setOnPreferenceChangeListener(this);
+        mPixelProps.setOnPreferenceChangeListener(this);
         mGoogleSpoof.setOnPreferenceChangeListener(this);
         mGphotosSpoof.setOnPreferenceChangeListener(this);
         mGamePropsSpoof.setOnPreferenceChangeListener(this);
 
-        mPifJsonFilePreference.setOnPreferenceClickListener(preference -> {
+        mGamePropsJsonFilePreference.setOnPreferenceClickListener(preference -> {
             openFileSelector(10001);
             return true;
         });
-
-        mGamePropsJsonFilePreference.setOnPreferenceClickListener(preference -> {
-            openFileSelector(10002);
-            return true;
-        });
-        
-        mUpdateJsonButton.setOnPreferenceClickListener(preference -> {
-            updatePropertiesFromUrl("https://raw.githubusercontent.com/chiteroman/PlayIntegrityFix/main/module/pif.json");
-            return true;
-        });
-        
-        Preference showPropertiesPref = findPreference("show_pif_properties");
-        if (showPropertiesPref != null) {
-            showPropertiesPref.setOnPreferenceClickListener(preference -> {
-                showPropertiesDialog();
-                return true;
-            });
-        }
     }
     
     private boolean isMainlineTensorModel(String model) {
@@ -150,104 +121,10 @@ public class SpoofSettings extends SettingsPreferenceFragment implements Prefere
             Uri uri = data.getData();
             if (uri != null) {
                 if (requestCode == 10001) {
-                    loadPifJson(uri);
-                } else if (requestCode == 10002) {
                     loadGameSpoofingJson(uri);
                 }
             }
         }
-    }
-    
-    private void showPropertiesDialog() {
-        StringBuilder properties = new StringBuilder();
-        try {
-            JSONObject jsonObject = new JSONObject();
-            String[] keys = {
-                "persist.sys.pihooks_ID",
-                "persist.sys.pihooks_BRAND",
-                "persist.sys.pihooks_DEVICE",
-                "persist.sys.pihooks_FINGERPRINT",
-                "persist.sys.pihooks_MANUFACTURER",
-                "persist.sys.pihooks_MODEL",
-                "persist.sys.pihooks_PRODUCT",
-                "persist.sys.pihooks_SECURITY_PATCH",
-                "persist.sys.pihooks_DEVICE_INITIAL_SDK_INT"
-            };
-            for (String key : keys) {
-                String value = SystemProperties.get(key, null);
-                if (value != null) {
-                    String buildKey = key.replace("persist.sys.pihooks_", "");
-                    jsonObject.put(buildKey, value);
-                }
-            }
-            properties.append(jsonObject.toString(4));
-        } catch (JSONException e) {
-            Log.e(TAG, "Error creating JSON from properties", e);
-            properties.append(getString(R.string.error_loading_properties));
-        }
-        new AlertDialog.Builder(getContext())
-            .setTitle(R.string.show_pif_properties_title)
-            .setMessage(properties.toString())
-            .setPositiveButton(android.R.string.ok, null)
-            .show();
-    }
-
-    private void updatePropertiesFromUrl(String urlString) {
-        new Thread(() -> {
-            try {
-                URL url = new URL(urlString);
-                HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
-                try (InputStream inputStream = urlConnection.getInputStream()) {
-                    String json = new String(inputStream.readAllBytes(), StandardCharsets.UTF_8);
-                    Log.d(TAG, "Downloaded JSON data: " + json);
-                    JSONObject jsonObject = new JSONObject(json);
-                    String spoofedModel = jsonObject.optString("MODEL", "Unknown model");
-                    for (Iterator<String> it = jsonObject.keys(); it.hasNext(); ) {
-                        String key = it.next();
-                        String value = jsonObject.getString(key);
-                        Log.d(TAG, "Setting property: persist.sys.pihooks_" + key + " = " + value);
-                        SystemProperties.set("persist.sys.pihooks_" + key, value);
-                    }
-                    mHandler.post(() -> {
-                        String toastMessage = getString(R.string.toast_spoofing_success, spoofedModel);
-                        Toast.makeText(getContext(), toastMessage, Toast.LENGTH_LONG).show();
-                    });
-
-                } finally {
-                    urlConnection.disconnect();
-                }
-            } catch (Exception e) {
-                Log.e(TAG, "Error downloading JSON or setting properties", e);
-                mHandler.post(() -> {
-                    Toast.makeText(getContext(), R.string.toast_spoofing_failure, Toast.LENGTH_LONG).show();
-                });
-            }
-            mHandler.postDelayed(() -> {
-                SystemRestartUtils.showSystemRestartDialog(getContext());
-            }, 1250);
-        }).start();
-    }
-
-    private void loadPifJson(Uri uri) {
-        Log.d(TAG, "Loading PIF JSON from URI: " + uri.toString());
-        try (InputStream inputStream = getActivity().getContentResolver().openInputStream(uri)) {
-            if (inputStream != null) {
-                String json = new String(inputStream.readAllBytes(), StandardCharsets.UTF_8);
-                Log.d(TAG, "PIF JSON data: " + json);
-                JSONObject jsonObject = new JSONObject(json);
-                for (Iterator<String> it = jsonObject.keys(); it.hasNext(); ) {
-                    String key = it.next();
-                    String value = jsonObject.getString(key);
-                    Log.d(TAG, "Setting PIF property: persist.sys.pihooks_" + key + " = " + value);
-                    SystemProperties.set("persist.sys.pihooks_" + key, value);
-                }
-            }
-        } catch (Exception e) {
-            Log.e(TAG, "Error reading PIF JSON or setting properties", e);
-        }
-        mHandler.postDelayed(() -> {
-            SystemRestartUtils.showSystemRestartDialog(getContext());
-        }, 1250);
     }
 
     private void loadGameSpoofingJson(Uri uri) {
@@ -297,8 +174,7 @@ public class SpoofSettings extends SettingsPreferenceFragment implements Prefere
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mGmsSpoof 
-            || preference == mPropOptions
+        if (preference == mPixelProps
             || preference == mGoogleSpoof
             || preference == mGphotosSpoof
             || preference == mGamePropsSpoof) {

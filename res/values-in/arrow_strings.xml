@@ -133,30 +133,13 @@
     <string name="qs_widgets_enabled_title">Widget QuickSettings</string>
     <string name="qs_widgets_enabled_summary">Tampilkan widget quicksettings untuk akses cepat</string>
 
-    <!-- GMS Spoof -->
-    <string name="gms_spoof_title">Aktifkan spoof GMS</string>
-    <string name="gms_spoof_summary">Spoof perangkat Anda untuk melewati Google Play Attestation</string>
-
     <!-- Enable all props -->
-    <string name="all_props_title">Aktifkan opsi spoof</string>
+    <string name="all_props_title">Aktifkan Pixel Props</string>
     <string name="all_props_summary">Mengaktifkan semua opsi spoof dalam PixelProps</string>
 
     <!-- Spoof google app props -->
     <string name="google_spoof_title">Spoof aplikasi Google</string>
-    <string name="google_spoof_summary">Spoof beberapa aplikasi Google ke Pixel 8 Pro</string>
+    <string name="google_spoof_summary">Spoof beberapa aplikasi Google ke Pixel 9 Pro</string>
     <string name="google_spoof_option_disabled">Mengaktifkan spoofing aplikasi Google tidak diperlukan oleh perangkat saat ini</string>
-
-    <!-- PIF spoofing -->
-    <string name="pif_spoofing_title">Pilih File PIF JSON</string>
-    <string name="pif_spoofing_summary">Pilih file PIF JSON yang akan digunakan untuk spoofing play integrity</string>
-
-    <!-- Play Integrity Fix JSON Update -->
-    <string name="toast_spoofing_success">Berhasil mengunduh pif.json. Spoofing sebagai %1$s untuk play integrity.</string>
-    <string name="toast_spoofing_failure">Gagal melakukan spoof properti.</string>
-    <string name="update_pif_json_title">Perbarui Play Integrity Fix</string>
-    <string name="update_pif_json_summary">Perbarui perangkat spoofing PIF, memerlukan koneksi internet.</string>
-    <string name="show_pif_properties_title">Properti Play Integrity Fix</string>
-    <string name="show_pif_properties_summary">Tampilkan semua properti PIF yang saat ini disetel</string>
-    <string name="error_loading_properties">Kesalahan memuat properti PIF</string>
 
 </resources>

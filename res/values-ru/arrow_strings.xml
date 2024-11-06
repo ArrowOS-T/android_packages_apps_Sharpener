@@ -133,30 +133,13 @@
     <string name="qs_widgets_enabled_title">Виджеты быстрых настроек</string>
     <string name="qs_widgets_enabled_summary">Показать виджеты быстрых настроек для быстрого доступа</string>
 
-    <!-- Подделка GMS -->
-    <string name="gms_spoof_title">Включить подделку GMS</string>
-    <string name="gms_spoof_summary">Маскируйте ваше устройство для обхода проверки Google Play</string>
-
     <!-- Включить все параметры подделки -->
-    <string name="all_props_title">Включить параметры подделки</string>
+    <string name="all_props_title">включить Pixel Props</string>
     <string name="all_props_summary">Включить все параметры подделки в PixelProps</string>
 
     <!-- Подделка параметров Google приложений -->
     <string name="google_spoof_title">Подделка Google приложений</string>
-    <string name="google_spoof_summary">Маскируйте несколько приложений Google под Pixel 8 Pro</string>
+    <string name="google_spoof_summary">Маскируйте несколько приложений Google под Pixel 9 Pro</string>
     <string name="google_spoof_option_disabled">Включение подделки приложений Google не требуется для текущего устройства</string>
-
-    <!-- Подделка PIF -->
-    <string name="pif_spoofing_title">Выберите PIF JSON-файл</string>
-    <string name="pif_spoofing_summary">Выберите PIF JSON-файл для подделки Play Integrity</string>
-
-    <!-- Обновление PIF JSON -->
-    <string name="toast_spoofing_success">Успешно загружен pif.json. Подделка как %1$s для Play Integrity.</string>
-    <string name="toast_spoofing_failure">Не удалось подделать свойства.</string>
-    <string name="update_pif_json_title">Обновление Play Integrity Fix</string>
-    <string name="update_pif_json_summary">Обновите устройство для подделки PIF, требуется подключение к интернету.</string>
-    <string name="show_pif_properties_title">Свойства Play Integrity Fix</string>
-    <string name="show_pif_properties_summary">Показать все установленные свойства PIF</string>
-    <string name="error_loading_properties">Ошибка загрузки свойств PIF</string>
 
 </resources>
