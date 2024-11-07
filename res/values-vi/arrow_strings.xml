@@ -23,9 +23,9 @@
     <string name="sharpener_about_summary">Tất cả các thông tin về OS đều ngay trước mặt bạn</string>
     <string name="sharpener_lockscreen_title">Màn hình khóa</string>
     <string name="sharpener_lockscreen_summary">Kích hoạt màn hình khóa và cài đặt chúng</string>
-    <string name="sharpener_themes_title">Themes</string>
+    <string name="sharpener_themes_title">Chủ đề</string>
     <string name="sharpener_themes_summary">Chào mừng tới ngôi nhà mới!</string>
-    <string name="sharpener_misc_title">Misc</string>
+    <string name="sharpener_misc_title">Tính năng nâng cao</string>
     <string name="sharpener_misc_summary">Nhiều tính năng khác đang chờ đón bạn</string>
     <string name="sharpener_quicksettings_title"> QS - Nhịp điệu mở rộng</string>
     <string name="sharpener_quicksettings_summary">Kiến tạo nhịp điệu ngay trong tầm mắt</string>
@@ -59,7 +59,7 @@
     <string name="none_string">Không tồn tại</string>
 
     <!-- Power menu on secure lockscreen -->
-    <string name="lockscreen_enable_power_menu_title">Tắt Nguồn ở màn hình khóa</string>
+    <string name="lockscreen_enable_power_menu_title">Tắt nguồn ở màn hình khóa</string>
     <string name="lockscreen_enable_power_menu_summary">Cho phép sử dụng thiết lập nâng cao ở màn hình khóa</string>
 
     <!-- QS in Lockscreen -->
@@ -67,7 +67,7 @@
     <string name="disable_qs_summary"> Giấu QS khi thiết bị khóa, không tắt thông báo</string>
 
     <!-- 4G icon -->
-    <string name="show_fourg_icon_title">Hiện thị 4G</string>
+    <string name="show_fourg_icon_title">Hiển thị 4G</string>
     <string name="show_fourg_icon_summary">Hiển thị tín hiệu 4G thay vì LTE</string>
 
     <!-- Media art -->
@@ -186,7 +186,7 @@
     <string name="all_props_summary">Enables all the spoof options within the PixelProps</string>
 
     <!-- Spoof google app props -->
-    <string name="google_spoof_title">Spoof google apps</string>
+    <string name="google_spoof_title">Giả mạo google apps</string>
     <string name="google_spoof_summary">Spoof a few google apps to Pixel 8 Pro</string>
     <string name="google_spoof_option_disabled">Enabling Google apps spoofing is not needed by current device</string>
 
