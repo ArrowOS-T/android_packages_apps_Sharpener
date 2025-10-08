@@ -111,18 +111,6 @@
     <string name="pie_animation_style_title">Анимация Android P</string>
     <string name="pie_animation_style_summary">Включить анимацию по умолчанию в стиле Android Pie</string>
 
-    <!-- Поддельные данные для отдельных приложений -->
-    <string name="gameprops_title">Включить поддельные данные для отдельных приложений</string>
-    <string name="gameprops_summary">Включает параметры поддельных данных для отдельных приложений в PixelProps</string>
-    <string name="gameprops_load_json_title">Выберите JSON-файл для поддельных данных приложений</string>
-    <string name="gameprops_load_json_summary">Выберите JSON-файл для поддельных данных для игр</string>
-
-    <string name="spoof_option_disabled">Отключение поддельных данных PixelProps не поддерживается на текущем устройстве</string>
-
-        <!-- Неограниченное хранилище Google Photos -->
-    <string name="use_photos_spoof_title">Неограниченное хранилище Photos</string>
-    <string name="use_photos_spoof_summary">Маскируйте ваше устройство как Pixel XL только для приложения Google Photos, чтобы обеспечить неограниченное хранилище для резервного копирования</string>
-
     <!-- Отступы в строке состояния -->
     <string name="statusbar_padding">Отступы строки состояния</string>
     <string name="statusbar_top_padding">Верх</string>
@@ -132,14 +120,4 @@
     <!-- Виджеты QS -->
     <string name="qs_widgets_enabled_title">Виджеты быстрых настроек</string>
     <string name="qs_widgets_enabled_summary">Показать виджеты быстрых настроек для быстрого доступа</string>
-
-    <!-- Включить все параметры подделки -->
-    <string name="all_props_title">включить Pixel Props</string>
-    <string name="all_props_summary">Включить все параметры подделки в PixelProps</string>
-
-    <!-- Подделка параметров Google приложений -->
-    <string name="google_spoof_title">Подделка Google приложений</string>
-    <string name="google_spoof_summary">Маскируйте несколько приложений Google под Pixel 9 Pro</string>
-    <string name="google_spoof_option_disabled">Включение подделки приложений Google не требуется для текущего устройства</string>
-
 </resources>

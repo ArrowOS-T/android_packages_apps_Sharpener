@@ -111,18 +111,6 @@
     <string name="pie_animation_style_title">Animasi Android P</string>
     <string name="pie_animation_style_summary">Aktifkan animasi "Default" Android Pie</string>
 
-    <!-- Per-app spoofing -->
-    <string name="gameprops_title">Aktifkan spoofing per-aplikasi</string>
-    <string name="gameprops_summary">Mengaktifkan opsi spoofing per-aplikasi di dalam PixelProps</string>
-    <string name="gameprops_load_json_title">Pilih File Per-aplikasi JSON Props</string>
-    <string name="gameprops_load_json_summary">Pilih file JSON per-aplikasi yang akan digunakan untuk spoofing game</string>
-
-    <string name="spoof_option_disabled">Menonaktifkan spoofing PixelProps tidak didukung oleh perangkat saat ini</string>
-
-    <!-- Unlimited google photos storage -->
-    <string name="use_photos_spoof_title">Penyimpanan Foto Tanpa Batas</string>
-    <string name="use_photos_spoof_summary">Spoof perangkat Anda sebagai Pixel XL hanya untuk aplikasi Google Photos untuk memberikan penyimpanan tak terbatas untuk cadangan</string>
-
     <!-- Status bar padding -->
     <string name="statusbar_padding">Padding Bar Status</string>
     <string name="statusbar_top_padding">Atas</string>
@@ -132,14 +120,5 @@
     <!-- QS Widgets -->
     <string name="qs_widgets_enabled_title">Widget QuickSettings</string>
     <string name="qs_widgets_enabled_summary">Tampilkan widget quicksettings untuk akses cepat</string>
-
-    <!-- Enable all props -->
-    <string name="all_props_title">Aktifkan Pixel Props</string>
-    <string name="all_props_summary">Mengaktifkan semua opsi spoof dalam PixelProps</string>
-
-    <!-- Spoof google app props -->
-    <string name="google_spoof_title">Spoof aplikasi Google</string>
-    <string name="google_spoof_summary">Spoof beberapa aplikasi Google ke Pixel 9 Pro</string>
-    <string name="google_spoof_option_disabled">Mengaktifkan spoofing aplikasi Google tidak diperlukan oleh perangkat saat ini</string>
 
 </resources>
