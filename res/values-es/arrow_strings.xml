@@ -111,18 +111,6 @@
      <string name="pie_animation_style_title">Animación Android P</string>
      <string name="pie_animation_style_summary">Habilitar animaciones por defecto de Android Pie.</string>
 
-     <!-- Falsificación por aplicación -->
-     <string name="gameprops_title">Habilitar falsificación por aplicación</string>
-     <string name="gameprops_summary">Habilita opciones de falsificación por aplicación dentro de PixelProps.</string>
-     <string name="gameprops_load_json_title">Seleccionar archivo JSON para falsificación por aplicación</string>
-     <string name="gameprops_load_json_summary">Selecciona un archivo JSON por aplicación para usar en la falsificación de juegos.</string>
-
-     <string name="spoof_option_disabled">Desactivar la falsificación de PixelProps no es compatible con este dispositivo.</string>
-
-     <!-- Almacenamiento ilimitado de Google Fotos -->
-     <string name="use_photos_spoof_title">Almacenamiento ilimitado de Fotos</string>
-     <string name="use_photos_spoof_summary">Haz que tu dispositivo se vea como un Pixel XL solo en la app de Google Fotos para tener almacenamiento ilimitado para respaldos.</string>
-
      <!-- Relleno de la barra de estado -->
      <string name="statusbar_padding">Relleno de la barra de estado</string>
      <string name="statusbar_top_padding">Superior</string>
@@ -132,15 +120,6 @@
      <!-- Widgets de QS -->
      <string name="qs_widgets_enabled_title">Widgets de ajustes rápidos</string>
      <string name="qs_widgets_enabled_summary">Mostrar widgets de ajustes rápidos para un acceso rápido</string>
-
-     <!-- Habilitar todas las propiedades -->
-     <string name="all_props_title">Habilitar Pixel Props</string>
-     <string name="all_props_summary">Habilitar todas las opciones de simulación dentro de PixelProps</string>
-
-     <!-- Simulación de aplicaciones de Google -->
-     <string name="google_spoof_title">Simular aplicaciones de Google</string>
-     <string name="google_spoof_summary">Simular algunas aplicaciones de Google como Pixel 9 Pro</string>
-     <string name="google_spoof_option_disabled">No es necesario habilitar la simulación de aplicaciones de Google en este dispositivo</string>
 
      <!-- Iconos coloridos en la barra de estado -->
      <string name="statusbar_colored_icons_title">Iconos coloridos</string>

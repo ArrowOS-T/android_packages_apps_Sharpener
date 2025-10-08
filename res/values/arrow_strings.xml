@@ -149,18 +149,6 @@
     <string name="pie_animation_style_title">Android P animation</string>
     <string name="pie_animation_style_summary">Enable Android Pie \"Default\" animations</string>
 
-    <!-- Per-app spoofing -->
-    <string name="gameprops_title">Enable Per-app spoofing</string>
-    <string name="gameprops_summary">Enables per-app spoofing options within the PixelProps</string>
-    <string name="gameprops_load_json_title">Select Per-app Props JSON File</string>
-    <string name="gameprops_load_json_summary">Pick Per-app JSON file to be used for spoofing games</string>
-
-    <string name="spoof_option_disabled">Disabling PixelProps spoofing is not supported by current device</string>
-
-    <!-- Unlimited google photos storage -->
-    <string name="use_photos_spoof_title">Unlimited Photos storage</string>
-    <string name="use_photos_spoof_summary">Spoof your device as Pixel XL for Google Photos app only to provide unlimited storage for backup</string>
-
     <!-- Status bar padding -->
     <string name="statusbar_padding">Statusbar Padding</string>
     <string name="statusbar_top_padding">Top</string>
@@ -218,15 +206,6 @@
     <!-- QS Widgets -->
     <string name="qs_widgets_enabled_title">QuickSettings Widgets</string>
     <string name="qs_widgets_enabled_summary">Show quicksettings widgets for quick access</string>
-
-    <!-- Enable all props -->
-    <string name="all_props_title">Enable Pixel Props</string>
-    <string name="all_props_summary">Enables all the spoof options within the PixelProps</string>
-
-    <!-- Spoof google app props -->
-    <string name="google_spoof_title">Spoof google apps</string>
-    <string name="google_spoof_summary">Spoof a few google apps to Pixel 9 Pro</string>
-    <string name="google_spoof_option_disabled">Enabling Google apps spoofing is not needed by current device</string>
 
     <!-- Statusbar colored icons -->
     <string name="statusbar_colored_icons_title">Colored icons</string>
